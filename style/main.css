@@ -1,0 +1,40 @@
+.first_screen {
+	width: 100%;
+	background-color: var(--main-color);
+}
+.first_screen .container {
+	background-image: url(../img/bcg-first_scren.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	padding: 70px 0 80px 0;
+}
+h1 span{
+	font-size: 39px;
+	font-weight: 600;
+	color: #fff;
+}
+h1 span.secondary_title {
+	display: block;
+	font-size: 26px;
+	margin: 30px 0 70px 0;
+	font-weight: 100;
+}
+.first_screen-links {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.first_screen-links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 40px;
+	background-color: var(--red-color);
+	font-size: 21px;
+	color: #fff;
+	border-radius: 3px;
+}
+.first_screen-links a:first-child {
+	margin-right: 30px;
+}
