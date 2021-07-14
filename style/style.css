@@ -223,6 +223,34 @@ header {
 	justify-content: center;
 	margin-right: 2px;
 	border-radius: 3px;
+	animation-name: flipCard;
+	animation-duration: 0.1s;
+}
+@keyframes flipCard{
+	0%{
+		transform: rotateX(0);
+	}
+	100%{
+		transform: rotateX(360deg);
+	}
+}
+.counter_tile-block:nth-child(1){
+	animation-iteration-count: 3;
+}
+.counter_tile-block:nth-child(2){
+	animation-iteration-count: 5;
+}
+.counter_tile-block:nth-child(3){
+	animation-iteration-count: 7;
+}
+.counter_tile-block:nth-child(4){
+	animation-iteration-count: 9;
+}
+.counter_tile-block:nth-child(5){
+	animation-iteration-count: 11;
+}
+.counter_tile-block:nth-child(6){
+	animation-iteration-count: 13;
 }
 .counter_tile-block:before {
 	content: '';
@@ -240,6 +268,25 @@ header {
 	font-size: 26px;
 	color: #fff;
 	z-index: 2;
+	animation-name: fadeIn;
+}
+.counter_tile-block:nth-child(1) p {
+	animation-duration: 0.6s;
+}
+.counter_tile-block:nth-child(2) p {
+	animation-duration: 1.2s;
+}
+.counter_tile-block:nth-child(3) p {
+	animation-duration: 1.8s;
+}
+.counter_tile-block:nth-child(4) p {
+	animation-duration: 2.5s;
+}
+.counter_tile-block:nth-child(5) p {
+	animation-duration: 3s;
+}
+.counter_tile-block:nth-child(6) p {
+	animation-duration: 3.5s;
 }
 .navbar_counter-wrap>p{
 	font-size: 15px;
