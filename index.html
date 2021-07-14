@@ -31,7 +31,64 @@
  		</div>
  	</div>
 
- 	<div class="popup" id="background"></div>
+ 	<div class="popup access">
+ 		<div class="close"><span></span><span></span></div>
+ 		<div class="popup_title">Авторизация</div>
+ 		<form>
+ 			<input type="email" placeholder="Адрес эл. почты">
+ 			<input type="password" placeholder="Пароль">
+ 			<div class="checkbox_wrap">
+ 				<input type="checkbox" id="accessPopup">
+ 				<label for="accessPopup">Даю согласие на обработку персональных данных</label>
+ 			</div>
+ 			<button>Войти</button>
+ 		</form>
+ 		<div class="reg_wrap">
+ 			<p class="resetTrigger">Забыли пароль?</p>
+ 			<p class="registration_trigger">Регистрация</p>
+ 		</div>
+ 	</div>
+
+ 	<div class="popup registration">
+ 		<div class="close"><span></span><span></span></div>
+ 		<div class="popup_title">Регистрация</div>
+ 		<form>
+ 			<div class="registration_radio-wrap">
+ 				<div class="input_wrap">
+ 					<input type="radio" id="indvidual" name="registrationEntity">
+ 					<label for="indvidual">Физическое лицо</label>
+ 				</div>
+ 				<div class="input_wrap">
+ 					<input type="radio" id="entity" name="registrationEntity">
+ 					<label for="entity">Юридическое лицо</label>
+ 				</div>
+ 			</div>
+ 			<input type="text" placeholder="Фамилия" required>
+ 			<input type="text" placeholder="Имя" required>
+ 			<input type="text" placeholder="Отчество" required>
+ 			<input type="email" placeholder="Адрес эл. почты" required>
+ 			<div class="select_wrap">
+ 				<select>
+ 					<option></option>
+ 					<option>Москва</option>
+ 					<option>Санкт-Петербург</option>
+ 					<option>Казань</option>
+ 					<option>Ростов</option>
+ 				</select>
+ 			</div>
+ 			<div class="registration_password-wrap">
+ 				<input type="password" placeholder="Пароль" required>
+ 				<input type="password" placeholder="Подтвердите пароль" required>
+ 			</div>
+ 			<div class="checkbox_wrap">
+ 				<input type="checkbox" id="registrationPopup" required>
+ 				<label for="registrationPopup">Даю согласие на обработку персональных данных</label>
+ 			</div>
+ 			<button>Зарегистрироваться</button>
+ 		</form>
+ 	</div>
+
+ 	<div id="background"></div>
 
   	<header>
 		<div class="topbar">
@@ -154,7 +211,91 @@
   	</div>
 
   	<footer>
-  		
+  		<div class="top_part">
+  			<div class="container">
+  				<div class="footer_block">
+	  				<a href="index.html" class="footer_logo-wrap"><img src="img/logo-footer.png" alt=""></a>
+	  				<p class="copyright">ООО "АЛЬФА-КИОМИ" © 2007-2021</p>
+	  				<div class="topbar_block">
+						<img src="img/icon-map_mark.png" alt="">
+						<p>г. Новосибирск, ул. Зональная 2/1</p>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-mail.png" alt="">
+						<a href="mailto:info@alfa-kiomi.ru">info@alfa-kiomi.ru</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-phone.png" alt="">
+						<a href="tel:+73833495961">+7 (383) 349-59-61</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-whatsapp.png" alt="">
+						<a href="">+7 (983) 314-91-38</a>
+					</div>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">Меню</div>
+	  				<ul>
+	  					<Li><a href="#">Каталог</a></Li>
+	  					<Li><a href="#">О магазине</a></Li>
+	  					<Li><a href="#">Гарантия</a></Li>
+	  					<Li><a href="#">Доставка</a></Li>
+	  					<Li><a href="#">Способы оплаты</a></Li>
+	  					<Li><a href="#">Отзывы и предложения</a></Li>
+	  					<Li><a href="#">Контакты</a></Li>
+	  				</ul>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">категории</div>
+	  				<ul>
+	  					<Li><a href="#">ДВС</a></Li>
+	  					<Li><a href="#">Кузов</a></Li>
+	  					<Li><a href="#">Оптика</a></Li>
+	  					<Li><a href="#">Подвеска</a></Li>
+	  					<Li><a href="#">Электрика</a></Li>
+	  					<Li><a href="#">Аксессуары</a></Li>
+	  					<Li><a href="#">Автохимия</a></Li>
+	  					<Li><a href="#">Прочее</a></Li>
+	  				</ul>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">СОЦСЕТИ</div>
+	  				<div class="footer_soial-wrap">
+	  					<a href="#" class="drom">
+	  						<img src="img/icon-drom.png" alt="">
+	  						<span>Мы на Drom.ru</span>
+	  					</a>
+	  					<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+	  				</div>
+	  				<div class="footer_block-title">способы оплаты</div>
+	  				<div class="foter_payments-wrap">
+	  					<img src="img/icon-visa.png" alt="">
+	  					<img src="img/icon-mastercard.png" alt="">
+	  					<img src="img/icon-maestro.png" alt="">
+	  					<img src="img/icon-mir.png" alt="">
+	  					<img src="img/icon-jcb.png" alt="">
+	  					<img src="img/icon-webmoney.png" alt="">
+	  					<img src="img/icon-qiwi.png" alt="">
+	  					<img src="img/icon-sberbank.png" alt="">
+	  					<img src="img/icon-alfa.png" alt="">
+	  					<img src="img/icon-youmoney.png" alt="">
+	  				</div>
+	  			</div>
+  			</div>
+  		</div>
+  		<div class="bottom_part">
+  			<div class="container">
+  				<a href="#">Политика конфиденциальности</a>
+  				<a href="#">Использование Cookies</a>
+  				<a href="#">Пользовательское соглашение</a>
+  				<div class="madeBy_wrap">
+  					<p>Дизайн сайта: </p>
+  					<a href="https://mvacorp.com">MvaCorp</a>
+  				</div>
+  			</div>
+  		</div>
   	</footer>
 
  </div>

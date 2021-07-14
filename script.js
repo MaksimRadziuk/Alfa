@@ -23,6 +23,22 @@ $(document).ready(function(){
 
 	$('.close').click(function(){
 		$('.cookieBar').fadeOut("slow");
+		$('#background').fadeOut("slow");
+		$('.popup').fadeOut("fast");
+	})
+	$('#background').click(function(){
+		$('#background').fadeOut("slow");
+		$('.popup').fadeOut("fast");
+	})
+
+	$('.enter_lobby').click(function(){
+		$('#background').fadeIn("fast");
+		$('.popup.access').fadeIn("slow");
+	})
+	$('.registration_trigger').click(function(){
+		$('.popup.access').fadeOut("fast");
+		$('#background').fadeIn("fast");
+		$('.popup.registration').fadeIn("slow");
 	})
 
 
