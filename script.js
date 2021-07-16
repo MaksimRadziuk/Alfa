@@ -140,4 +140,36 @@ $(document).ready(function(){
 
 
 
+
+	$('.filter__tab-trigger').click(function(){
+		$('.filter__tab-trigger').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('.view_trigger-button').click(function(){
+		$('.view_trigger-button').removeClass('active');
+		$(this).addClass('active');
+	})
+
+	$('.result_block-slider').slick({
+		dots: true,
+	    arrows: false,
+	    infinite: true,
+	    speed: 300,
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	});
+
+	$('.view_trigger-button').click(function(){
+		$('.view_trigger-button').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('#tileViewFilter').click(function(){
+		$('.filter_result-wrap').removeClass('rows');
+		$('.result_block-slider').slick();
+	})
+	$('#rowViewFilter').click(function(){
+		$('.filter_result-wrap').addClass('rows');
+		$('.result_block-slider').slick();
+	})
+
 });
