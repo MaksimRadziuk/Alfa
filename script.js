@@ -149,6 +149,33 @@ $(document).ready(function(){
 		$('.view_trigger-button').removeClass('active');
 		$(this).addClass('active');
 	})
+	$('#filterFirstTrigger').click(function(){
+		$('.filter__tab').removeClass('active');
+		$('#filterFirst').addClass('active');
+	})
+	$('#filterSecondTrigger').click(function(){
+		$('.filter__tab').removeClass('active');
+		$('#filterSecond').addClass('active');
+	})
+	$('#filterThirdTrigger').click(function(){
+		$('.filter__tab').removeClass('active');
+		$('#filterThird').addClass('active');
+	})
+
+	$('#tabSecondStep1 .filter_step2-block').click(function(){
+		$('#tabSecondStep1').removeClass('active');
+		$('#tabSecondStep2').addClass('active');
+	})
+	$('#tabSecondStep2 ul li').click(function(){
+		$('#tabSecondStep2').removeClass('active');
+		$('#tabSecondStep3').addClass('active');
+	})
+	$('#tabSecondStep3 .car_model-block').click(function(){
+		$('#tabSecondStep3').removeClass('active');
+		$('#tabSecondStep4').addClass('active');
+	})
+
+
 
 	$('.result_block-slider').slick({
 		dots: true,

@@ -190,13 +190,13 @@
   		</div>
   		<div class="filter">
   			<div class="filter__wrap-header">
-				<div class="filter__tab-trigger active">Поиск по модели авто</div>
-				<div class="filter__tab-trigger ">Поиск по каталогу</div>
-				<div class="filter__tab-trigger">Поиск по VIN \ FRAME</div>
+				<div class="filter__tab-trigger active" id="filterFirstTrigger">Поиск по модели авто</div>
+				<div class="filter__tab-trigger " id="filterSecondTrigger">Поиск по каталогу</div>
+				<div class="filter__tab-trigger" id="filterThirdTrigger">Поиск по VIN \ FRAME</div>
 			</div>
 			<div class="filter_wrap">
   				<div class="container">
-  					<div class="filter__tab filter__tab-first active">
+  					<div class="filter__tab filter__tab-first active" id="filterFirst">
   						<form>
   							<div class="filter_tab-title">Введите или выберите:</div>
   							<div class="select_wrap">
@@ -400,11 +400,277 @@
   							<li class="arrow next"></li>
   						</ul>
   					</div>
-  					<div class="filter__tab filter__tab-second ">
-  						
+  					<div class="filter__tab filter__tab-second " id="filterSecond">
+  						<div class="container">
+  							<div class="filter_step2-wrap active" id="tabSecondStep1">
+  								<div class="filter_step2-block" data-value="ДВС">
+  									<div class="img_wrap">
+  										<img src="img/filter_step2-engineactive.png" alt="" class="active">
+  										<img src="img/filter_step2-engine.png" alt="" class="inactive">
+  									</div>
+  									<p>ДВС</p>
+  								</div>
+  								<div class="filter_step2-block" data-value="Кузов">
+  									<div class="img_wrap">
+  										<img src="img/filter_step2-doorsactive.png" alt="" class="active">
+  										<img src="img/filter_step2-doors.png" alt="" class="inactive">
+  									</div>
+  									<p>Кузов</p>
+  								</div>
+  								<div class="filter_step2-block" data-value="Оптика">
+  									<div class="img_wrap">
+  										<img src="img/filter_step2-opticactive.png" alt="" class="active">
+  										<img src="img/filter_step2-optic.png" alt="" class="inactive">
+  									</div>
+  									<p>Оптика</p>
+  								</div>
+  								<div class="filter_step2-block" data-value="Подвеска">
+  									<div class="img_wrap">
+  										<img src="img/filter_step2-gsprungactie.png" alt="" class="active">
+  										<img src="img/filter_step2-gsprung.png" alt="" class="inactive">
+  									</div>
+  									<p>Подвеска</p>
+  								</div>
+  								<div class="filter_step2-block" data-value="Электрика">
+  									<div class="img_wrap">
+  										<img src="img/filter_step2-batteyactive.png" alt="" class="active">
+  										<img src="img/filter_step2-battery.png" alt="" class="inactive">
+  									</div>
+  									<p>Электрика</p>
+  								</div>
+  								<div class="filter_step2-block" data-value="Аксессуары">
+  									<div class="img_wrap">
+  										<img src="img/filter_step2-cleanersactive.png" alt="" class="active">
+  										<img src="img/filter_step2-cleaners.png" alt="" class="inactive">
+  									</div>
+  									<p>Аксессуары</p>
+  								</div>
+  								<div class="filter_step2-block" data-value="Автохимия">
+  									<div class="img_wrap">
+  										<img src="img/filter_step2-canactive.png" alt="" class="active">
+  										<img src="img/filter_step2-can.png" alt="" class="inactive">
+  									</div>
+  									<p>Автохимия</p>
+  								</div>
+  								<div class="filter_step2-block" data-value="Прочее">
+  									<div class="img_wrap">
+  										<img src="img/filter_step2-gearsactive.png" alt="" class="active">
+  										<img src="img/filter_step2-gears.png" alt="" class="inactive">
+  									</div>
+  									<p>Прочее</p>
+  								</div>
+  							</div>
+  							<div class="filter_step2-wrap" id="tabSecondStep2">
+  								<div class="beradcrumbs">
+  									<p>Поиск по каталогу</p>
+  									<p class="arrow">></p>
+  									<p>ДВС</p>
+  									<p class="arrow">></p>
+  									<p>Бачок масяный</p>
+  								</div>
+  								<ul>
+  									<li>АКПП</li>
+  									<li>Бачок</li>
+  									<li>Бачок ГУР</li>
+  									<li>Бачок масляный</li>
+  									<li>Бачок расширительный</li>
+  									<li>Бензонасос</li>
+  									<li>Блок ДВС</li>
+  									<li>Блок дроссельной заслонки</li>
+  									<li>Болт головки блока</li>
+  									<li>Вакуумный клапан</li>
+  									<li>Вакуумный насос</li>
+  									<li>Вискомуфта</li>
+  									<li>Влагоотделитель</li>
+  									<li>Воздухозаборник</li>
+  									<li>Высоковольтные провода</li>
+  									<li>Генератор</li>
+  									<li>Глушитель</li>
+  									<li>Головка блока</li>
+  									<li>Горловина радиатора</li>
+  									<li>Двигатель</li>
+  									<li>АКПП</li>
+  									<li>Бачок</li>
+  									<li>Бачок ГУР</li>
+  									<li>Бачок масляный</li>
+  									<li>Бачок расширительный</li>
+  									<li>Бензонасос</li>
+  									<li>Блок ДВС</li>
+  									<li>Блок дроссельной заслонки</li>
+  									<li>Болт головки блока</li>
+  									<li>Вакуумный клапан</li>
+  									<li>Вакуумный насос</li>
+  									<li>Вискомуфта</li>
+  									<li>Влагоотделитель</li>
+  									<li>Воздухозаборник</li>
+  									<li>Высоковольтные провода</li>
+  									<li>Генератор</li>
+  									<li>Глушитель</li>
+  									<li>Головка блока</li>
+  									<li>Горловина радиатора</li>
+  									<li>Двигатель</li>
+  									<li>АКПП</li>
+  									<li>Бачок</li>
+  									<li>Бачок ГУР</li>
+  									<li>Бачок масляный</li>
+  									<li>Бачок расширительный</li>
+  									<li>Бензонасос</li>
+  									<li>Блок ДВС</li>
+  									<li>Блок дроссельной заслонки</li>
+  									<li>Болт головки блока</li>
+  									<li>Вакуумный клапан</li>
+  									<li>Вакуумный насос</li>
+  									<li>Вискомуфта</li>
+  									<li>Влагоотделитель</li>
+  									<li>Воздухозаборник</li>
+  									<li>Высоковольтные провода</li>
+  									<li>Генератор</li>
+  									<li>Глушитель</li>
+  									<li>Головка блока</li>
+  									<li>Горловина радиатора</li>
+  									<li>Двигатель</li>
+  									<li>АКПП</li>
+  									<li>Бачок</li>
+  									<li>Бачок ГУР</li>
+  									<li>Бачок масляный</li>
+  									<li>Бачок расширительный</li>
+  									<li>Бензонасос</li>
+  									<li>Блок ДВС</li>
+  									<li>Блок дроссельной заслонки</li>
+  									<li>Болт головки блока</li>
+  									<li>Вакуумный клапан</li>
+  									<li>Вакуумный насос</li>
+  									<li>Вискомуфта</li>
+  									<li>Влагоотделитель</li>
+  									<li>Воздухозаборник</li>
+  									<li>Высоковольтные провода</li>
+  									<li>Генератор</li>
+  									<li>Глушитель</li>
+  									<li>Головка блока</li>
+  									<li>Горловина радиатора</li>
+  									<li>Двигатель</li>
+  								</ul>
+  							</div>
+  							<div class="filter_step2-wrap" id="tabSecondStep3">
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  								<div class="car_model-block">
+  									<div class="img_wrap"><img src="img/car_model.png" alt=""></div>
+  									<p>Subaru</p>
+  								</div>
+  							</div>
+  							<div class="filter_step2-wrap " id="tabSecondStep4">
+  								<div class="model_row-block">
+									1-series
+								</div>
+								<div class="model_row-block">
+									3-series
+								</div>
+  							</div>
+  						</div>
   					</div>
-  					<div class="filter__tab filter__tab-third">
-  						
+  					<div class="filter__tab filter__tab-third " id="filterThird">
+  						<input type="text" placeholder="VIN/Frame">
+  						<div class="filter_table-wrap">
+  							<div class="table_row">
+  								<p>Наименование</p>
+  								<p>Описание</p>
+  								<p>Дата выпуска</p>
+  								<p>Цвет кузова</p>
+  								<p>Опции</p>
+  							</div>
+  							<div class="table_row">
+  								<p>CROWN/CROWN MAJESTA</p>
+  								<p>JZS14#</p>
+  								<p>11.1992</p>
+  								<p>046</p>
+  								<p>Комплектация: Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Tempore, deserunt! Praesentium excepturi consectetur vero non reprehenderit. Minima molestias quas aliquid ratione dolorum officia modi magni nam eveniet aperiam. Repellendus, modi.</p>
+  							</div>
+  							<div class="table_row">
+  								<p>CROWN/CROWN MAJESTA</p>
+  								<p>JZS14#</p>
+  								<p>11.1992</p>
+  								<p>046</p>
+  								<p>Комплектация: Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Tempore, deserunt! Praesentium excepturi consectetur vero non reprehenderit. Minima molestias quas aliquid ratione dolorum officia modi magni nam eveniet aperiam. Repellendus, modi.</p>
+  							</div>
+  							<div class="table_row">
+  								<p>CROWN/CROWN MAJESTA</p>
+  								<p>JZS14#</p>
+  								<p>11.1992</p>
+  								<p>046</p>
+  								<p>Комплектация: Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Tempore, deserunt! Praesentium excepturi consectetur vero non reprehenderit. Minima molestias quas aliquid ratione dolorum officia modi magni nam eveniet aperiam. Repellendus, modi.</p>
+  							</div>
+  						</div>
   					</div>
   				</div>
   			</div>
