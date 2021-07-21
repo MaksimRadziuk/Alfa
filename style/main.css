@@ -392,11 +392,22 @@ h2 {
 
 .blackbox {
 	width: 100%;
+	padding: 100px 0;
+	background-color: var(--main-color);
+}
+.blackbox .container {
 	background-image: url(../img/bcg-engine.png);
-	background-size: cover;
+	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-position: right center;
-	padding: 100px 0;
+}
+.blackbox img.engine {
+	display: none;
+	margin: 0 auto ;
+	margin-bottom: 30px;
+	height: 50vw;
+	max-height: 400px;
+	min-height: 220px;
 }
 h2.blackbox_title {
 	font-size: 27px;
@@ -766,6 +777,8 @@ h2.blackbox_title {
 }
 
 
+
+
 @media all and (max-width: 1780px) {
 	.filter__tab-trigger:first-child {
 	    margin-left:0;
@@ -789,6 +802,9 @@ h2.blackbox_title {
 	}
 	#tabSecondStep3 {
 		padding: 0;
+	}
+	.blackbox {
+		background-position: -560px center;
 	}
 }
 @media all and (max-width: 1380px) {
@@ -825,6 +841,28 @@ h2.blackbox_title {
 	}
 	.filter_table-wrap .table_row {
 	    grid-template-columns: 25% 13% 12% 12% 38%;
+	}
+	h2.blackbox_title {
+		width: 80%;
+	}
+	.blackbox p {
+		width: 70%
+	}
+	.blackbox {
+		padding: 60px 0;
+	}
+	.autoparsing {
+		padding: 60px 0 160px 0;
+	}
+	.autoparsing h2 {
+		margin-bottom: 60px;
+		font-size: 28px;
+	}
+	.slider_wrap .slick-dots {
+		bottom: -80px
+	}
+	.slider_wrap .slick-prev, .slider_wrap .slick-next {
+		bottom: -105px
 	}
 }
 @media all and (max-width: 1180px) {
@@ -930,6 +968,64 @@ h2.blackbox_title {
 	#filterThird {
 		padding-bottom: 10px;
 	}
+	h2 {
+		font-size: 26px;
+		margin-bottom: 60px;
+	}
+	.advantages_wrap {
+		grid-column-gap: 5vw;
+	}
+	.advantages_block-title {
+		font-size: 21px;
+		margin: 20px 0;
+	}
+	.advantages_block p {
+		font-size: 15px;
+	}
+	.advantages_block>a {
+		margin-top: 15px;
+	}
+	.advantages {
+		padding: 60px 0;
+	}
+	.youtube {
+		padding: 60px 0;
+	}
+	.slider_wrap .slick-dots {
+		bottom: -80px
+	}
+	.slider_wrap .slick-prev, .slider_wrap .slick-next {
+		bottom: -105px;
+	}
+	.youtube .header_wrap {
+		margin-bottom: 60px
+	}
+	#youtubeSlider {
+		min-width: 850px;
+	}
+	#youtubeSlider .slider_wrap .slick-prev, 
+	#youtubeSlider .slider_wrap .slick-next {
+		display: none;
+	}
+	.blackbox img.engine {
+		display: block;
+	} 
+	.blackbox .container {
+		background-image: none;
+	}
+	h2.blackbox_title {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.blackbox p {
+		width: 100%
+	}
+	.up {
+		opacity: 0;
+		pointer-events: none;
+		z-index: -1;
+	}
+	
 }
 @media all and (max-width: 880px) {
 	.filter_result-wrap {
@@ -966,6 +1062,14 @@ h2.blackbox_title {
 		height: 60px;
 	}
 }
+@media all and (max-width: 830px) {
+	.autoparsing {
+		padding: 40px 0;
+	}
+	.autoparsing h2 {
+		margin-bottom: 40px
+	}
+}
 @media all and (max-width: 750px) {
 	h1 span {
 		font-size: 26px
@@ -986,6 +1090,13 @@ h2.blackbox_title {
 	}
 	#tabSecondStep2 ul {
 	    grid-template-columns: repeat(2, 1fr);
+	}
+	.advantages_wrap {
+	    grid-template-columns: 1fr;
+	    grid-row-gap: 30px;
+	}
+	h2.blackbox_title {
+		font-size: 24px;
 	}
 }
 @media all and (max-width: 640px) {
@@ -1071,6 +1182,12 @@ h2.blackbox_title {
 		grid-column-gap: 20px;
 		grid-row-gap: 20px;
 	}
+	.autoparsing h2 {
+		font-size: 24px
+	} 
+	.autoparsing .slider_wrap {
+		min-width: 560px;
+	}
 }
 @media all and (max-width: 500px) {
 	h1 span {
@@ -1105,6 +1222,67 @@ h2.blackbox_title {
 	.car_model-block {
 		margin: 0
 	}
+	.advantages_img-wrap {
+		height: 30px
+	}
+	.advantages_block-title {
+		font-size: 17px;
+		margin-bottom: 30px
+	}
+	.advantages_block p {
+		line-height: 1.4
+	}
+	.advantages_block>a {
+		font-size: 13px;
+	}
+	.advantages {
+		padding: 40px 0;
+	}
+	h2	{
+		font-size: 21px;
+		margin-bottom: 40px
+	}
+	.advantages_block p>a {
+		display: block;
+		font-weight: 400;
+	}
+	.youtube {
+		padding: 40px 0;
+	}
+	.youtube .header_wrap {
+		margin-bottom: 40px
+	}
+	.youtube .header_wrap h2 {
+		margin-right: 20px;
+	}
+	.youtube .header_wrap a {
+		font-size: 17px
+	}
+	.youtube_slider-block {
+		max-width: 270px;
+	}
+	.youtube_video-wrap {
+		height: 180px
+	}
+	#youtubeSlider {
+	    min-width: 560px;
+	}
+	.youtube_video-title {
+		font-size: 15px;
+		margin-top: 20px
+	}
+	.blackbox {
+		padding: 40px 0 20px 0;
+	}
+	.blackbox p {
+		font-size: 15px
+	}
+	h2.blackbox_title {
+		font-size: 17px;
+	}
+	.autoparsing h2 {
+		font-size: 21px
+	} 
 }
 @media all and (max-width: 350px) {
 	h1 span.secondary_title {
@@ -1123,4 +1301,12 @@ h2.blackbox_title {
 		margin-top: 15px;
 		font-size: 15px;
 	}
+	.youtube .header_wrap a {
+		font-size: 13px;
+		line-height: 1.4
+	}
+	.youtube .header_wrap h2 {
+		margin-right: 10px;
+	}
+	
 }

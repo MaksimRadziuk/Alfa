@@ -58,10 +58,10 @@ $(document).ready(function(){
 	  slidesToScroll: 2,
 	  responsive: [
 	    {
-	      breakpoint: 1440,
+	      breakpoint: 1680,
 	      settings: {
 	        slidesToShow: 5,
-	        slidesToScroll: 3,
+	        slidesToScroll: 2,
 	        infinite: true,
 	        dots: true
 	      }
@@ -74,24 +74,19 @@ $(document).ready(function(){
 	      }
 	    },
 	    {
-	      breakpoint: 1024,
+	      breakpoint: 1110,
 	      settings: {
 	        slidesToShow: 3,
-	        slidesToScroll: 1
+	        slidesToScroll: 2
 	      }
 	    },
 	    {
-	      breakpoint: 680,
+	      breakpoint: 831,
 	      settings: {
 	        slidesToShow: 2,
-	        slidesToScroll: 1
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
+	        slidesToScroll: 1,
+	        dots:false,
+	        arrows:false
 	      }
 	    }
 	  ]
@@ -106,40 +101,28 @@ $(document).ready(function(){
 	  slidesToScroll: 2,
 	  responsive: [
 	    {
-	      breakpoint: 1440,
+	      breakpoint: 1701,
 	      settings: {
-	        slidesToShow: 5,
+	        slidesToShow: 3,
 	        slidesToScroll: 3,
 	        infinite: true,
 	        dots: true
 	      }
 	    },
 	    {
-	      breakpoint: 1380,
+	      breakpoint: 1381,
 	      settings: {
-	        slidesToShow: 4,
+	        slidesToShow: 2,
 	        slidesToScroll: 2
 	      }
 	    },
 	    {
-	      breakpoint: 1024,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 1
-	      }
-	    },
-	    {
-	      breakpoint: 680,
+	      breakpoint: 901,
 	      settings: {
 	        slidesToShow: 2,
-	        slidesToScroll: 1
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1
+	        slidesToScroll: 1,
+	        dots:false,
+	        arrows:false
 	      }
 	    }
 	  ]
