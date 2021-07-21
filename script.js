@@ -31,7 +31,7 @@ $(document).ready(function(){
 		$('.popup').fadeOut("fast");
 	})
 
-	$('.enter_lobby').click(function(){
+	$('.enter_lobby, .topbar_block img').click(function(){
 		$('#background').fadeIn("fast");
 		$('.popup.access').fadeIn("slow");
 	})
@@ -39,6 +39,13 @@ $(document).ready(function(){
 		$('.popup.access').fadeOut("fast");
 		$('#background').fadeIn("fast");
 		$('.popup.registration').fadeIn("slow");
+	})
+
+	$('.phone_trigger').click(function(){
+		$('.popup.phone').fadeIn("fast");
+	})
+	$('.hamburger').click(function(){
+		$('.popup.menu').fadeIn("fast");
 	})
 
 
@@ -197,6 +204,22 @@ $(document).ready(function(){
 	$('#rowViewFilter').click(function(){
 		$('.filter_result-wrap').addClass('rows');
 		$('.result_block-slider').slick();
+	})
+
+	if($(window).innerWidth()<700) {
+		$('.filter_result-wrap').removeClass('rows');
+			$('#tileViewFilter').addClass('active');
+			$('#rowViewFilter').removeClass('active');
+	}
+	else {}
+
+	$(window).resize(function(){
+		if($(window).innerWidth()<700) {
+			$('.filter_result-wrap').removeClass('rows');
+			$('#tileViewFilter').addClass('active');
+			$('#rowViewFilter').removeClass('active');
+		}
+		else {}
 	})
 
 });
