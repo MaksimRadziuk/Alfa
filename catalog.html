@@ -243,8 +243,8 @@
 				<ul class="navigation">
 					<li>Каталог <img src="img/icon-caret.png" alt="">
 						<ul class="dropdown_menu">
-							<li><a href="#">Автозапчасти</a></li>
-							<li><a href="#">Авто на разборе</a></li>
+							<li><a href="catalog.html">Автозапчасти</a></li>
+							<li><a href="disassemble.html">Авто на разборе</a></li>
 						</ul>
 					</li>
 					<li><a href="about.html">О нас</a></li>
@@ -272,11 +272,220 @@
   				<a href="catalog.html">Каталог</a>
   			</div>
   			<h1>Каталог продукции</h1>
-  		</div>
-  		<div class="catalog_content-wrap">
-  			<div class="container">
-  				
-  			</div>
+	  		<div class="catalog_content-wrap">
+  				<div class="catalog_sidebar-wrap">
+  					<div class="catalog_sidebar-title">Выберите авто</div>
+  					<div class="select_wrap">
+						<select placeholder="Марка автомобиля">
+							<option selected disabled hidden>Марка автомобиля</option>
+							<option value="">Audi</option>
+							<option value="">Aston Martin</option>
+							<option value="">BMW</option>
+							<option value="">Toyota</option>
+						</select>
+					</div>
+  					<div class="select_wrap">
+						<select placeholder="Марка автомобиля">
+							<option selected disabled hidden>Модель</option>
+							<option value="">Eclipse 1998-2000</option>
+							<option value="">Kadet 1991-1996</option>
+							<option value="">Touran 2005-2006</option>
+							<option value="">Camry 2019-...</option>
+						</select>
+					</div>
+					<ul class="parent">
+						<li>
+							<p>АКПП</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Бачок</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Бачок ГУР</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Бачок масляный</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Бачок расширительный</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Бензонасос</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Блок ДВС</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Блок дроссельной заслонки</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Болт головки блока</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Вакуумный клапан</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Вакуумный насос</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+						<li>
+							<p>Вискомуфта</p>
+							<ul class="dropdown">
+								<li>Пункт подменю 1</li>
+								<li>Пункт подменю 2</li>
+								<li>Пункт подменю 3</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="catalog_sidebar-title">Тип установки</div>
+					<div class="sidebar_checkbox-wrap">
+						<input type="checkbox" id="typeBottom">
+						<label for="typeBottom">Задний</label>
+						<div class="prompt">44 товара</div>
+					</div>
+					<div class="sidebar_checkbox-wrap">
+						<input type="checkbox" id="typeCircle">
+						<label for="typeCircle">Круговой</label>
+						<div class="prompt">68 товаров</div>
+					</div>
+					<div class="sidebar_checkbox-wrap margin-bottom">
+						<input type="checkbox" id="typeFront">
+						<label for="typeFront">Передний</label>
+						<div class="prompt">45 товаров</div>
+					</div>
+					<div class="catalog_sidebar-title">Установка</div>
+					<div class="sidebar_status-wrap">
+						<p>Да</p>
+						<div class="flag_checkbox-wrap">
+							<input type="checkbox" id="flagStatus">
+							<label for="flagStatus"></label>
+						</div>
+					</div>
+					<div class="catalog_sidebar-title">Установка</div>
+					<div class="sidebar_radio-wrap">
+						<input type="radio" id="radioPositive" name="installStatus">
+						<label for="radioPositive">Да</label>
+					</div>
+					<div class="sidebar_radio-wrap margin-bottom">
+						<input type="radio" id="radioNegative" name="installStatus">
+						<label for="radioNegative">Нет</label>
+					</div>
+					<div class="catalog_sidebar-title">Цвет</div>
+					<div class="sidebar_color-wrap">
+						<div class="color_radio-wrap">
+							<input type="radio" name="color" id="colorWhite">
+							<label for="colorWhite"></label>
+						</div>
+						<div class="color_radio-wrap">
+							<input type="radio" name="color" id="colorBlack">
+							<label for="colorBlack"></label>
+						</div>
+						<div class="color_radio-wrap">
+							<input type="radio" name="color" id="colorBlue">
+							<label for="colorBlue"></label>
+						</div>
+						<div class="color_radio-wrap">
+							<input type="radio" name="color" id="colorOrange">
+							<label for="colorOrange"></label>
+						</div>
+						<div class="color_radio-wrap">
+							<input type="radio" name="color" id="colorRed">
+							<label for="colorRed"></label>
+						</div>
+						<div class="color_radio-wrap">
+							<input type="radio" name="color" id="colorGreen">
+							<label for="colorGreen"></label>
+						</div>
+						<div class="color_radio-wrap">
+							<input type="radio" name="color" id="colorPurple">
+							<label for="colorPurple"></label>
+						</div>
+						<div class="color_radio-wrap">
+							<input type="radio" name="color" id="colorGrey">
+							<label for="colorGrey"></label>
+						</div>
+					</div>
+					<div class="catalog_sidebar-title">Цена, руб</div>
+					<div class="sidebar_price-wrap">
+						<div class="price_input-wrap">
+							<p>От</p>
+							<input type="number" id="filterStartPrice">
+							<p>До</p>
+							<input type="number" id="filterEndPrice">
+						</div>
+						<div class="price_graph-wrap">
+							<div class="track"></div>
+							<div class="point start_point"><p>1000</p></div>
+							<div class="point end_point"><p>10000</p></div>
+							<div class="track_gap"></div>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="additional_wrap">
+						<div class="more">Еще</div>
+						<div class="sidebar_reset-wrap">
+							<img src="img/icon-cross_grey.png" alt="">
+							<p>Сбросить все</p>
+						</div>
+					</div>
+					<button class="show">Показать</button>
+  				</div>
+  				<div class="catalog_results-wrap"></div>
+	  		</div>
   		</div>
 		<div class="catalog_seo-wrap">
 			<div class="container">
