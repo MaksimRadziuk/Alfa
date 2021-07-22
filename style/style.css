@@ -1008,6 +1008,16 @@ footer .madeBy_wrap a {
 		visibility: visible;
 		width: auto;
 	}
+	.mobile_bottombar-block:focus img.inactive {
+		opacity: 0;
+		visibility: hidden;
+		width: 0;
+	}
+	.mobile_bottombar-block:focus img.active {
+		opacity: 1;
+		visibility: visible;
+		width: auto;
+	}
 	footer  {
 		margin-bottom: 60px;
 	}
