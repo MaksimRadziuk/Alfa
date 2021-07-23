@@ -210,4 +210,10 @@ $(document).ready(function(){
 		else {}
 	})
 
+
+	$('.disassemble_filter-block').click(function(){
+		$('.disassemble_filter-block').removeClass('active');
+		$(this).addClass('active');
+	})
+
 });

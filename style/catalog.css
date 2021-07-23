@@ -16,6 +16,9 @@ h1 {
 	grid-column-gap: 30px;
 	padding-bottom: 90px;
 }
+.catalog_content-wrap.disassemble {
+	grid-template-columns: 1fr;
+}
 .catalog_sidebar-title {
 	width: 100%;
 	background-color: #f1f4f6;
@@ -460,6 +463,9 @@ button.showMore {
 }
 .filter_result-wrap.rows {
 	grid-template-columns: 1fr;
+}
+.catalog_content-wrap.disassemble .filter_result-wrap {
+	grid-template-columns: repeat(6, 1fr);
 }
 
 .filter_result-block {
