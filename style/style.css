@@ -1047,6 +1047,11 @@ footer .madeBy_wrap a {
 	footer .madeBy_wrap a {
 		margin-bottom: 0
 	}
+	.up {
+		visibility: hidden;
+		z-index: -1;
+		pointer-events: none;
+	}
 }
 @media all and (max-width: 600px) {
 	footer .top_part .container {

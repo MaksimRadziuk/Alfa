@@ -25,6 +25,7 @@ $(document).ready(function(){
 		$('.cookieBar').fadeOut("slow");
 		$('#background').fadeOut("slow");
 		$('.popup').fadeOut("fast");
+		$('.catalog_sidebar-wrap').removeClass("active");
 	})
 	$('#background').click(function(){
 		$('#background').fadeOut("slow");
@@ -46,6 +47,10 @@ $(document).ready(function(){
 	})
 	$('.hamburger').click(function(){
 		$('.popup.menu').fadeIn("fast");
+	})
+
+	$('.sidebar_trigger').click(function(){
+		$('.catalog_sidebar-wrap').addClass("active");
 	})
 
 
