@@ -295,40 +295,72 @@
   						<form>
   							<div class="filter_tab-title">Введите или выберите:</div>
   							<div class="select_wrap">
-  								<select placeholder="Название или номер запчасти">
+  								<input type="text" list="partsFilterDropdown" placeholder="Название или номер запчасти" />
+								<datalist id="partsFilterDropdown">
+								  <option>Капот</option>
+								  <option>Генератор</option>
+								  <option>Глушитель</option>
+								  <option>Гидроусилитель</option>
+								</datalist>
+  								<!-- <select placeholder="Название или номер запчасти">
   									<option selected disabled hidden>Название или номер запчасти</option>
   									<option value="">Капот</option>
   									<option value="">Генератор</option>
   									<option value="">Глушитель</option>
   									<option value="">Гидроусилитель руля</option>
-  								</select>
+  								</select> -->
   							</div>
   							<div class="select_wrap">
-  								<select placeholder="Марка автомобиля">
+  								<input type="text" list="carsFilterDropdown" placeholder="Марка автомобиля"/>
+								<datalist id="carsFilterDropdown">
+								  <option>Volvo</option>
+								  <option>Saab</option>
+								  <option>Mercedes</option>
+								  <option>Audi</option>
+								  <option>BMW</option>
+								  <option>Hyundai</option>
+								  <option>Honda</option>
+								  <option>Haval</option>
+								</datalist>
+  								<!-- <select placeholder="Марка автомобиля">
   									<option selected disabled hidden>Марка автомобиля</option>
   									<option value="">Audi</option>
   									<option value="">Aston Martin</option>
   									<option value="">BMW</option>
   									<option value="">Toyota</option>
-  								</select>
+  								</select> -->
   							</div>
   							<div class="select_wrap">
-  								<select placeholder="Серия кузова">
+  								<input type="text" list="modelFilterDropdown"  placeholder="Серия кузова" />
+								<datalist id="modelFilterDropdown">
+  									<option>SS 1, 2000-2003</option>
+  									<option>FM 3, 2003-2008</option>
+  									<option>FD 1, 2008-2012</option>
+  									<option>SD 5, 2013-...</option>
+								</datalist>
+  								<!-- <select placeholder="Серия кузова">
   									<option selected disabled hidden>Серия кузова</option>
   									<option value="">SS 1, 2000-2003</option>
   									<option value="">FM 3, 2003-2008</option>
   									<option value="">FD 1, 2008-2012</option>
   									<option value="">SD 5, 2013-...</option>
-  								</select>
+  								</select> -->
   							</div>
   							<div class="select_wrap">
-  								<select placeholder="Серия двигателя">
+  								<input type="text" list="engineFilterDropdown"  placeholder="Серия двигателя"/>
+								<datalist id="engineFilterDropdown">
+  									<option>NBC43C</option>
+  									<option>NBC43D</option>
+  									<option>NBC45C</option>
+  									<option>NBC45D</option>
+								</datalist>
+  								<!-- <select placeholder="Серия двигателя">
   									<option selected disabled hidden>Серия двигателя</option>
   									<option value="">NBC43C</option>
   									<option value="">NBC43D</option>
   									<option value="">NBC45C</option>
   									<option value="">NBC45D</option>
-  								</select>
+  								</select> -->
   							</div>
   						</form>
   						<div class="filter_result-view">
