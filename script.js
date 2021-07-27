@@ -215,5 +215,26 @@ $(document).ready(function(){
 		$('.disassemble_filter-block').removeClass('active');
 		$(this).addClass('active');
 	})
+	$('.product_qrcode-trigger').click(function(){
+		$('#background').fadeIn("fast");
+		$('.popup.qr').fadeIn("slow");
+	})
+	$('.product_gallery-wrap').click(function(){
+		$('#background').fadeIn("fast");
+		$('.popup.gallery').fadeIn("slow");
+	})
+	
+	$('#tabDescriptionTrigger').click(function(){
+		$('.tab_content').removeClass('active');
+		$('#tabDescription').addClass('active');
+	})
+	$('#tabDeliveryTrigger').click(function(){
+		$('.tab_content').removeClass('active');
+		$('#tabDelivery').addClass('active');
+	})
+	$('#tabDonorsTrigger').click(function(){
+		$('.tab_content').removeClass('active');
+		$('#tabDonors').addClass('active');
+	})
 
 });
