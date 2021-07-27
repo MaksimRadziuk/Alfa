@@ -232,6 +232,10 @@ $(document).ready(function(){
 		$('.tab_content').removeClass('active');
 		$('#tabDelivery').addClass('active');
 	})
+	$('#tabChangeTrigger').click(function(){
+		$('.tab_content').removeClass('active');
+		$('#tabChange').addClass('active');
+	})
 	$('#tabDonorsTrigger').click(function(){
 		$('.tab_content').removeClass('active');
 		$('#tabDonors').addClass('active');

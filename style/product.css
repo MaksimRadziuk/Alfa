@@ -1,6 +1,9 @@
 header {
 	border-bottom: 2px solid #e8ebec;
 }
+.breadcrumbs {
+	margin-bottom: 60px;
+}
 .filter__wrap-header {
 	width: 100%;
 	background-color: #fff;
@@ -52,14 +55,98 @@ header {
 .product_content-wrap {
 	padding-bottom: 100px;
 	display: grid;
-	grid-template-columns: 42% 1fr;
+	grid-template-columns: 720px 1fr;
 	grid-column-gap: 90px;
 }
+
 .product_gallery-wrap {
 	width: 100%;
 }
-.product_gallery-wrap img {
+
+
+.es-carousel-wrapper {
+	background: transparent;
+	box-shadow: none;
+	position: absolute;
+	bottom: -750px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 640px;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+.es-carousel ul li {
+	margin-left: 5px;
+	width: 100px;
+	height: 90px;
+	min-width: 100px;
+}
+.es-carousel ul li a {
+	border: 1px solid #e1e3e5;
+	border-radius: 5px;
+	width: 100px;
+	height: 90px;
+}
+.es-carousel ul li a>img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.es-carousel ul li.selected a {
+	background-color: #e1e3e5;
+	border: 1px solid var(--green-color);
+}
+.rg-view {
+	position: absolute;
+	bottom: -85px;
+	height: auto;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 40px;
+}
+.rg-view a {
+	display: none;
+}
+
+
+.es-nav {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	z-index: 5;
+}
+.es-nav span.es-nav-next {
+	right: -40px;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.es-nav span.es-nav-prev {
+	transform: rotateZ(180deg);
+	left: -40px;
+	background-position: center;
+	background-size: 100% 100%;
+}
+.es-nav span {
+    position: absolute;
+    top: -15px;
+    left: 8px;
+    background: transparent url(../img/slider_arrow-right.png) no-repeat;
+    width: 15px;
+	height: 45px;
+    text-indent: -9000px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.es-carousel {
+	background: transparent;
+}
+.rg-image-wrapper {
+	padding: 0;
+	margin-bottom: 170px;
+	border-radius: 3px;
 }
 
 .product_info-wrap {
@@ -340,4 +427,9 @@ button.addtoBusket {
 	font-size: 15px;
 	color: #a8aeb2;
 	margin: 0;
+}
+
+#tabChange p {
+	font-size: 21px;
+	font-weight: 600;
 }
