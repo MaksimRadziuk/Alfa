@@ -691,6 +691,9 @@ h2.blackbox_title {
 .car_model-block .img_wrap {
 	height: 65px;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .car_model-block .img_wrap img {
 	width: auto;
