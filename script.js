@@ -223,7 +223,7 @@ $(document).ready(function(){
 		$('#background').fadeIn("fast");
 		$('.popup.gallery').fadeIn("slow");
 	})
-	
+
 	$('#tabDescriptionTrigger').click(function(){
 		$('.tab_content').removeClass('active');
 		$('#tabDescription').addClass('active');
@@ -240,5 +240,9 @@ $(document).ready(function(){
 		$('.tab_content').removeClass('active');
 		$('#tabDonors').addClass('active');
 	})
+
+	$('.mobile_tab-trigger').click(function(){
+		$(this).parent('.tab_content').toggleClass('active');
+	});
 
 });
