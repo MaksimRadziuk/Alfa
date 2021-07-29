@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>На разборе в Японии Mazda Capella GWEW FS-ZE</title>
+	
+	<link rel="shortcut icon" type="image/jpg" href="img/favicon32.png"/>
+	<link rel="shortcut icon" type="image/jpg" href="img/favicon16.png"/>
+
+
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="lib/slick/slick-theme.css">
+	<link rel="stylesheet" href="lib/slick/slick.css">
+	<link rel="stylesheet" href="lib/ResponsiveImageGallery/css/style.css">
+	<link rel="stylesheet" href="lib/ResponsiveImageGallery/css/elastislide.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/product.css">
+	<link rel="stylesheet" href="style/donor.css">
+
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+				<div class="rg-image-nav">
+					<a href="#" class="rg-image-nav-prev">Previous Image</a>
+					<a href="#" class="rg-image-nav-next">Next Image</a>
+				</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
+			<div class="rg-caption-wrapper">
+				<div class="rg-caption" style="display:none;">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</script>
+</head>
+<body>
+
+ <div class="wrap">
+ 	<div class="up"><img src="img/up.png" alt="go up"></div>
+
+ 	<div class="cookieBar">
+ 		<div class="container">
+ 			<div class="close">
+	 			<span></span>
+	 			<span></span>
+	 		</div>
+	 		<p>Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, вы даете согласие на работу с этими файлами</p>
+	 		<button>Принять и закрыть</button>
+ 		</div>
+ 	</div>
+
+ 	<div class="popup access">
+ 		<div class="close"><span></span><span></span></div>
+ 		<div class="popup_title">Авторизация</div>
+ 		<form>
+ 			<input type="email" placeholder="Адрес эл. почты">
+ 			<input type="password" placeholder="Пароль">
+ 			<div class="checkbox_wrap">
+ 				<input type="checkbox" id="accessPopup">
+ 				<label for="accessPopup">Даю согласие на обработку персональных данных</label>
+ 			</div>
+ 			<button>Войти</button>
+ 		</form>
+ 		<div class="reg_wrap">
+ 			<p class="resetTrigger">Забыли пароль?</p>
+ 			<p class="registration_trigger">Регистрация</p>
+ 		</div>
+ 	</div>
+
+ 	<div class="popup registration">
+ 		<div class="close"><span></span><span></span></div>
+ 		<div class="popup_title">Регистрация</div>
+ 		<form>
+ 			<div class="registration_radio-wrap">
+ 				<div class="input_wrap">
+ 					<input type="radio" id="indvidual" name="registrationEntity">
+ 					<label for="indvidual">Физическое лицо</label>
+ 				</div>
+ 				<div class="input_wrap">
+ 					<input type="radio" id="entity" name="registrationEntity">
+ 					<label for="entity">Юридическое лицо</label>
+ 				</div>
+ 			</div>
+ 			<input type="text" placeholder="Фамилия" required>
+ 			<input type="text" placeholder="Имя" required>
+ 			<input type="text" placeholder="Отчество" required>
+ 			<input type="email" placeholder="Адрес эл. почты" required>
+ 			<div class="select_wrap">
+ 				<select>
+ 					<option></option>
+ 					<option>Москва</option>
+ 					<option>Санкт-Петербург</option>
+ 					<option>Казань</option>
+ 					<option>Ростов</option>
+ 				</select>
+ 			</div>
+ 			<div class="registration_password-wrap">
+ 				<input type="password" placeholder="Пароль" required>
+ 				<input type="password" placeholder="Подтвердите пароль" required>
+ 			</div>
+ 			<div class="checkbox_wrap">
+ 				<input type="checkbox" id="registrationPopup" required>
+ 				<label for="registrationPopup">Даю согласие на обработку персональных данных</label>
+ 			</div>
+ 			<button>Зарегистрироваться</button>
+ 		</form>
+ 	</div>
+
+ 	<div class="popup phone">
+ 		<div class="close">
+ 			<span></span><span></span>
+ 		</div>
+		<div class="topbar_block">
+			<img src="img/icon-phone.png" alt="">
+			<a href="tel:+73833495961">+7 (383) 349-59-61</a>
+		</div>
+		<div class="topbar_block">
+			<img src="img/icon-whatsapp.png" alt="">
+			<a href="https://wa.me/79833149138">+7 (983) 314-91-38</a>
+		</div>
+ 		<div class="topbar_block">
+			<img src="img/icon-map_mark.png" alt="">
+			<p>г. Новосибирск, ул. Зональная 2/1</p>
+		</div>
+		<div class="topbar_block">
+			<img src="img/icon-mail.png" alt="">
+			<a href="mailto:info@alfa-kiomi.ru">info@alfa-kiomi.ru</a>
+		</div>
+		<div class="topbar_block">
+			<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
+			<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
+			<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+		</div>
+ 	</div>
+
+ 	<div class="popup menu">
+ 		<div class="close">
+ 			<span></span><span></span>
+ 		</div>
+ 		<ul class="navigation">
+			<li>Каталог</li>
+			<ul class="dropdown_menu">
+				<li><a href="catalog.html">Автозапчасти</a></li>
+				<li><a href="disassemble.html">Авто на разборе</a></li>
+			</ul>
+			<li><a href="about.html">О нас</a></li>
+			<li><a href="warranty.html">Гарантии</a></li>
+			<li><a href="delivery.html">Доставка</a></li>
+			<li><a href="feedback.html">Отзывы</a></li>
+			<li><a href="contact.html">Контакты</a></li>
+		</ul>
+ 	</div>
+
+ 	<div class="popup qr">
+ 		<div class="close">
+ 			<span></span><span></span>
+ 		</div>
+ 		<div class="popup_title">QR code данной запчасти</div>
+		<img src="img/qr_code.png" alt="">
+ 	</div>
+
+ 	<div class="popup gallery">
+ 		<div class="close">
+ 			<span></span><span></span>
+ 		</div>
+ 		<div class="popup_title">Airbag водителя на BMW 3-Series в Новосибирске</div>
+		<div class="gallery-wrap">
+			<div class="gallery_image-wrap">
+				<div class="button previous"><img src="img/slider_arrow-right.png" alt=""></div>
+				<div class="gallery_image-block">
+					<img src="img/product.png" alt="">
+				</div>
+				<div class="button next"><img src="img/slider_arrow-right.png" alt=""></div>
+			</div>
+			<div class="gallery_counter-wrap">
+				( <span class="current_image">1</span>/<span class="all_images">5</span> )
+			</div>
+		</div>
+ 	</div>
+
+ 	<div class="mobile_bottombar">
+ 		<div class="mobile_bottombar-block">
+ 			<img src="img/bottombar-search.png" alt="" class="inactive">
+ 			<img src="img/bottombar-search-active.png" alt="" class="active">
+ 		</div>
+ 		<a href="disassemble.html" class="mobile_bottombar-block">
+ 			<img src="img/bottombar-car.png" alt="" class="inactive">
+ 			<img src="img/bottombar-car-active.png" alt="" class="active">
+ 		</a>
+ 		<div class="mobile_bottombar-block">
+ 			<img src="img/bottombar-favoriate.png" alt="" class="inactive">
+ 			<img src="img/bottombar-favoriate-active.png" alt="" class="active">
+ 		</div>
+ 		<div class="mobile_bottombar-block">
+ 			<img src="img/bottombar-profile.png" alt="" class="inactive">
+ 			<img src="img/bottombar-profile-active.png" alt="" class="active">
+ 		</div>
+ 		<div class="mobile_bottombar-block phone_trigger">
+ 			<img src="img/bottombar-contacts.png" alt="" class="inactive">
+ 			<img src="img/bottombar-contacts-active.png" alt="" class="active">
+ 		</div>
+ 	</div>
+
+ 	<div id="background"></div>
+
+  	<header>
+  		<div class="mobile_header">
+  			<div class="hamburger">
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  			</div>
+  			<a href="index.html" class="logo-wrap">
+				<img src="img/logo-header.png" alt="">
+			</a>
+			<div class="phone_trigger"><img src="img/phone_trigger.png" alt=""></div>
+			<div class="navbar_basket-wrap">
+				<img src="img/icon-cart.png" alt="">
+				<p>5</p>
+			</div>
+			<div class="topbar_right-wrap">
+				<div class="topbar_block">
+					<img src="img/icon-lock.png" alt="">
+				</div>
+			</div>
+  		</div>
+		<div class="topbar">
+			<div class="container">
+				<div class="topbar_left-wrap">
+					<div class="topbar_block">
+						<img src="img/icon-map_mark.png" alt="">
+						<p>г. Новосибирск, ул. Зональная 2/1</p>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-mail.png" alt="">
+						<a href="mailto:info@alfa-kiomi.ru">info@alfa-kiomi.ru</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-phone.png" alt="">
+						<a href="tel:+73833495961">+7 (383) 349-59-61</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-whatsapp.png" alt="">
+						<a href="https://wa.me/79833149138">+7 (983) 314-91-38</a>
+					</div>
+					<div class="topbar_block">
+						<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+					</div>
+				</div>
+				<div class="topbar_right-wrap">
+					<div class="topbar_block">
+						<img src="img/icon-lock.png" alt="">
+						<p class="enter_lobby">Вход</p>
+						<span>/</span>
+						<p class="registration_trigger">Регистрация</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<a href="index.html" class="logo-wrap">
+					<img src="img/logo-header.png" alt="">
+				</a>
+				<div class="navbar_counter-wrap">
+					<div class="counter_tiles-wrap">
+						<div class="counter_tile-block">
+							<p>4</p>
+						</div>
+						<div class="counter_tile-block">
+							<p>8</p>
+						</div>
+						<div class="counter_tile-block">
+							<p>3</p>
+						</div>
+						<div class="counter_tile-block">
+							<p>2</p>
+						</div>
+						<div class="counter_tile-block">
+							<p>5</p>
+						</div>
+					</div>
+					<p>запчастей <br>сейчас на складе</p>
+				</div>
+				<ul class="navigation">
+					<li>Каталог <img src="img/icon-caret.png" alt="">
+						<ul class="dropdown_menu">
+							<li><a href="catalog.html">Автозапчасти</a></li>
+							<li><a href="disassemble.html">Авто на разборе</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="warranty.html">Гарантии</a></li>
+					<li><a href="delivery.html">Доставка</a></li>
+					<li><a href="feedback.html">Отзывы</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+				<div class="navbar_basket-wrap">
+					<img src="img/icon-cart.png" alt="">
+					<div class="basket_info-wrap">
+						<p>5  товаров</p>
+						<p>250 000 &#8381;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+  	</header>
+
+  	<div class="content">
+  		<div class="container">
+  			<div class="breadcrumbs">
+  				<a href="index.html">Главная</a>
+  				<a class="arrow"><img src="img/breadcrumbs_arrow.png" alt=""></a>
+  				<a href="catalog.html">Каталог</a>
+  				<a class="arrow"><img src="img/breadcrumbs_arrow.png" alt=""></a>
+  				<a href="product.html">На разборе в Японии Mazda Capella GWEW FS-ZE</a>
+  			</div>
+	  		<div class="product_content-wrap">
+	  			<div class="product__gallery-wrap">
+  					<div id="rg-gallery" class="rg-gallery">
+						<div class="rg-thumbs">
+							<div class="es-carousel-wrapper">
+								<div class="es-nav">
+									<span class="es-nav-prev">Previous</span>
+									<span class="es-nav-next">Next</span>
+								</div>
+								<div class="es-carousel">
+									<ul>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+										<li><a href="#"><img src="img/thumbs/donor.png" data-large="img/donor.png" alt="image01" /></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+  				</div>
+	  			<div class="product_info-wrap">
+	  				<h1>На разборе в Японии Mazda Capella GWEW FS-ZE</h1>
+	  				<div class="donor_info-wrap">
+	  					<div class="donor_info-row">
+	  						<div class="title">Марка - Модель:</div>
+	  						<div class="content">Mazda Familia</div>
+	  					</div>
+	  					<div class="donor_info-row">
+	  						<div class="title">Кузов: </div>
+	  						<div class="content">BJ5P</div>
+	  					</div>
+	  					<div class="donor_info-row">
+	  						<div class="title">ДВС: </div>
+	  						<div class="content">ZL-DE</div>
+	  					</div>
+	  					<div class="donor_info-row">
+	  						<div class="title">Год выпуска автомобиля:</div>
+	  						<div class="content">2000/04</div>
+	  					</div>
+	  					<div class="donor_info-row">
+	  						<div class="title">Номер кузова (VIN):</div>
+	  						<div class="content">BJ5P-205379</div>
+	  					</div>
+	  					<div class="donor_info-row">
+	  						<div class="title">Код цвета:</div>
+	  						<div class="content">4F</div>
+	  					</div>
+	  					<div class="donor_info-row">
+	  						<div class="title">Дополнительное описание автомобиля:</div>
+	  						<div class="content">M/T</div>
+	  					</div>
+	  					<div class="donor_info-row">
+	  						<div class="title">Местонахождение:</div>
+	  						<div class="content">В Новосибирске</div>
+	  					</div>
+	  				</div>
+	  				<a href="#" class="show_parts">Показать запчасти</a>
+	  				<p class="donor_warning">Выберите интересующие Вас запчасти и отправьте заявку нам. Мы уведомим Вас на эл.почту когда данные запчасти появятся в нашем интернет-магазине</p>
+	  				<div class="donor_parts-wrap">
+	  					<div class="parts_header-wrap">
+	  						<div class="checkbox_wrap">
+								<input type="checkbox" id="checkboxAll">
+								<label for="checkboxAll"></label>
+							</div>
+							<div class="donor_part-title">Наименование запчасти</div>
+							<div class="donor_part-side">Сторона</div>			
+	  					</div>
+	  					<div class="donor_table-wrap">
+	  						<div class="donor_table">
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox1">
+	  									<label for="checkbox1"></label>
+	  								</div>
+	  								<div class="donor_part-title">airbag водителя	</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox2">
+	  									<label for="checkbox2"></label>
+	  								</div>
+	  								<div class="donor_part-title">airbag пассажира</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox3">
+	  									<label for="checkbox3"></label>
+	  								</div>
+	  								<div class="donor_part-title">АКПП</div>
+	  								<div class="donor_part-side">2WD</div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox4">
+	  									<label for="checkbox4"></label>
+	  								</div>
+	  								<div class="donor_part-title">Амортизатор двери багажника</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox5">
+	  									<label for="checkbox5"></label>
+	  								</div>
+	  								<div class="donor_part-title">Балка задней подвески</div>
+	  								<div class="donor_part-side">Зад</div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox6">
+	  									<label for="checkbox6"></label>
+	  								</div>
+	  								<div class="donor_part-title">Балка под ДВС</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox7">
+	  									<label for="checkbox7"></label>
+	  								</div>
+	  								<div class="donor_part-title">Балка продольная</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox8">
+	  									<label for="checkbox8"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бампер задний</div>
+	  								<div class="donor_part-side">Зад</div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox9">
+	  									<label for="checkbox9"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бампер передний</div>
+	  								<div class="donor_part-side">Перед</div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox10">
+	  									<label for="checkbox10"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бардачок</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox11">
+	  									<label for="checkbox11"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бачок ГУР</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox12">
+	  									<label for="checkbox12"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бачок омывателя</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox13">
+	  									<label for="checkbox13"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бачок расширительный</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox14">
+	  									<label for="checkbox14"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бензонасос</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox15">
+	  									<label for="checkbox15"></label>
+	  								</div>
+	  								<div class="donor_part-title">Блок ABS</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox16">
+	  									<label for="checkbox16"></label>
+	  								</div>
+	  								<div class="donor_part-title">Блок дроссельной заслонки</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox16">
+	  									<label for="checkbox16"></label>
+	  								</div>
+	  								<div class="donor_part-title">Блок подрулевых переключателей	</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox17">
+	  									<label for="checkbox17"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бампер передний</div>
+	  								<div class="donor_part-side">Перед</div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox18">
+	  									<label for="checkbox18"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бардачок</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox19">
+	  									<label for="checkbox19"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бачок ГУР</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox20">
+	  									<label for="checkbox20"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бачок омывателя</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox21">
+	  									<label for="checkbox21"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бачок расширительный</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox22">
+	  									<label for="checkbox22"></label>
+	  								</div>
+	  								<div class="donor_part-title">Бензонасос</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox23">
+	  									<label for="checkbox23"></label>
+	  								</div>
+	  								<div class="donor_part-title">Блок ABS</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox24">
+	  									<label for="checkbox24"></label>
+	  								</div>
+	  								<div class="donor_part-title">Блок дроссельной заслонки</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  							<div class="donor_table-row">
+	  								<div class="checkbox_wrap">
+	  									<input type="checkbox" id="checkbox25">
+	  									<label for="checkbox25"></label>
+	  								</div>
+	  								<div class="donor_part-title">Блок подрулевых переключателей	</div>
+	  								<div class="donor_part-side"></div>
+	  							</div>
+	  						</div>
+	  					</div>
+	  					<div class="donor_feedback-wrap">
+	  						<input type="email" placeholder="Адрес эл. почты для уведомления о поступлении товара">
+	  						<button>Оставить заявку</button>
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+  		</div>
+  	</div>
+
+  	<footer>
+  		<div class="top_part">
+  			<div class="container">
+  				<div class="footer_block">
+	  				<a href="index.html" class="footer_logo-wrap"><img src="img/logo-footer.png" alt=""></a>
+	  				<p class="copyright">ООО "АЛЬФА-КИОМИ" © 2007-2021</p>
+	  				<div class="topbar_block">
+						<img src="img/icon-map_mark.png" alt="">
+						<p>г. Новосибирск, ул. Зональная 2/1</p>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-mail.png" alt="">
+						<a href="mailto:info@alfa-kiomi.ru">info@alfa-kiomi.ru</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-phone.png" alt="">
+						<a href="tel:+73833495961">+7 (383) 349-59-61</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-whatsapp.png" alt="">
+						<a href="https://wa.me/79833149138">+7 (983) 314-91-38</a>
+					</div>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">Меню</div>
+	  				<ul>
+	  					<Li><a href="#">Каталог</a></Li>
+	  					<Li><a href="#">О магазине</a></Li>
+	  					<Li><a href="#">Гарантия</a></Li>
+	  					<Li><a href="#">Доставка</a></Li>
+	  					<Li><a href="#">Способы оплаты</a></Li>
+	  					<Li><a href="#">Отзывы и предложения</a></Li>
+	  					<Li><a href="#">Контакты</a></Li>
+	  				</ul>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">категории</div>
+	  				<ul>
+	  					<Li><a href="#">ДВС</a></Li>
+	  					<Li><a href="#">Кузов</a></Li>
+	  					<Li><a href="#">Оптика</a></Li>
+	  					<Li><a href="#">Подвеска</a></Li>
+	  					<Li><a href="#">Электрика</a></Li>
+	  					<Li><a href="#">Аксессуары</a></Li>
+	  					<Li><a href="#">Автохимия</a></Li>
+	  					<Li><a href="#">Прочее</a></Li>
+	  				</ul>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">СОЦСЕТИ</div>
+	  				<div class="footer_soial-wrap">
+	  					<a href="#" class="drom">
+	  						<img src="img/icon-drom.png" alt="">
+	  						<span>Мы на Drom.ru</span>
+	  					</a>
+	  					<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+	  				</div>
+	  				<div class="footer_block-title">способы оплаты</div>
+	  				<div class="foter_payments-wrap">
+	  					<img src="img/icon-visa.png" alt="">
+	  					<img src="img/icon-mastercard.png" alt="">
+	  					<img src="img/icon-maestro.png" alt="">
+	  					<img src="img/icon-mir.png" alt="">
+	  					<img src="img/icon-jcb.png" alt="">
+	  					<img src="img/icon-webmoney.png" alt="">
+	  					<img src="img/icon-qiwi.png" alt="">
+	  					<img src="img/icon-sberbank.png" alt="">
+	  					<img src="img/icon-alfa.png" alt="">
+	  					<img src="img/icon-youmoney.png" alt="">
+	  				</div>
+	  			</div>
+  			</div>
+  		</div>
+  		<div class="bottom_part">
+  			<div class="container">
+  				<a href="#">Политика конфиденциальности</a>
+  				<a href="#">Использование Cookies</a>
+  				<a href="#">Пользовательское соглашение</a>
+  				<div class="madeBy_wrap">
+  					<p>Дизайн сайта: </p>
+  					<a href="https://mvacorp.com">MvaCorp</a>
+  				</div>
+  			</div>
+  		</div>
+  	</footer>
+
+ </div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+	<script src="lib/slick/slick.js"></script>
+	<script src="lib/jquery.maskedinput/jquery.maskedinput.js"></script>
+	<script src="lib/ResponsiveImageGallery/js/jquery.easing.1.3.js"></script>
+	<script src="lib/ResponsiveImageGallery/js/jquery.tmpl.min.js"></script>
+	<script src="lib/ResponsiveImageGallery/js/jquery.elastislide.js"></script>
+	<script src="lib/ResponsiveImageGallery/js/gallery.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
