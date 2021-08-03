@@ -31,6 +31,10 @@ $(document).ready(function(){
 		$('#background').fadeOut("slow");
 		$('.popup').fadeOut("fast");
 	})
+	$('#transparentBackground').click(function(){
+		$('#transparentBackground').fadeOut("slow");
+		$('.popup').fadeOut("fast");
+	})
 
 	$('.enter_lobby, .topbar_block img').click(function(){
 		$('#background').fadeIn("fast");
@@ -244,5 +248,13 @@ $(document).ready(function(){
 	$('.mobile_tab-trigger').click(function(){
 		$(this).parent('.tab_content').toggleClass('active');
 	});
+
+	$('.navbar_basket-wrap').click(function(){
+		$('.quick__review').fadeToggle();
+		$('#transparentBackground').fadeToggle();
+	})
+	$('.delete_item-button').click(function(){
+		$(this).parent('.basket_table-row, .quick__review-row').remove();
+	})
 
 });

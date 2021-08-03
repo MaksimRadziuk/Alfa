@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>На разборе в Японии Mazda Capella GWEW FS-ZE</title>
+	
+	<link rel="shortcut icon" type="image/jpg" href="img/favicon32.png"/>
+	<link rel="shortcut icon" type="image/jpg" href="img/favicon16.png"/>
+
+
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="lib/slick/slick-theme.css">
+	<link rel="stylesheet" href="lib/slick/slick.css">
+	<link rel="stylesheet" href="lib/ResponsiveImageGallery/css/style.css">
+	<link rel="stylesheet" href="lib/ResponsiveImageGallery/css/elastislide.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/basket.css">
+
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+				<div class="rg-image-nav">
+					<a href="#" class="rg-image-nav-prev">Previous Image</a>
+					<a href="#" class="rg-image-nav-next">Next Image</a>
+				</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
+			<div class="rg-caption-wrapper">
+				<div class="rg-caption" style="display:none;">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</script>
+</head>
+<body>
+
+ <div class="wrap">
+ 	<div class="up"><img src="img/up.png" alt="go up"></div>
+
+ 	<div class="cookieBar">
+ 		<div class="container">
+ 			<div class="close">
+	 			<span></span>
+	 			<span></span>
+	 		</div>
+	 		<p>Этот сайт использует cookie для хранения данных. Продолжая использовать сайт, вы даете согласие на работу с этими файлами</p>
+	 		<button>Принять и закрыть</button>
+ 		</div>
+ 	</div>
+
+ 	<div class="popup access">
+ 		<div class="close"><span></span><span></span></div>
+ 		<div class="popup_title">Авторизация</div>
+ 		<form>
+ 			<input type="email" placeholder="Адрес эл. почты">
+ 			<input type="password" placeholder="Пароль">
+ 			<div class="checkbox_wrap">
+ 				<input type="checkbox" id="accessPopup">
+ 				<label for="accessPopup">Даю согласие на обработку персональных данных</label>
+ 			</div>
+ 			<button>Войти</button>
+ 		</form>
+ 		<div class="reg_wrap">
+ 			<p class="resetTrigger">Забыли пароль?</p>
+ 			<p class="registration_trigger">Регистрация</p>
+ 		</div>
+ 	</div>
+
+ 	<div class="popup registration">
+ 		<div class="close"><span></span><span></span></div>
+ 		<div class="popup_title">Регистрация</div>
+ 		<form>
+ 			<div class="registration_radio-wrap">
+ 				<div class="input_wrap">
+ 					<input type="radio" id="indvidual" name="registrationEntity">
+ 					<label for="indvidual">Физическое лицо</label>
+ 				</div>
+ 				<div class="input_wrap">
+ 					<input type="radio" id="entity" name="registrationEntity">
+ 					<label for="entity">Юридическое лицо</label>
+ 				</div>
+ 			</div>
+ 			<input type="text" placeholder="Фамилия" required>
+ 			<input type="text" placeholder="Имя" required>
+ 			<input type="text" placeholder="Отчество" required>
+ 			<input type="email" placeholder="Адрес эл. почты" required>
+ 			<div class="select_wrap">
+ 				<select>
+ 					<option></option>
+ 					<option>Москва</option>
+ 					<option>Санкт-Петербург</option>
+ 					<option>Казань</option>
+ 					<option>Ростов</option>
+ 				</select>
+ 			</div>
+ 			<div class="registration_password-wrap">
+ 				<input type="password" placeholder="Пароль" required>
+ 				<input type="password" placeholder="Подтвердите пароль" required>
+ 			</div>
+ 			<div class="checkbox_wrap">
+ 				<input type="checkbox" id="registrationPopup" required>
+ 				<label for="registrationPopup">Даю согласие на обработку персональных данных</label>
+ 			</div>
+ 			<button>Зарегистрироваться</button>
+ 		</form>
+ 	</div>
+
+ 	<div class="popup phone">
+ 		<div class="close">
+ 			<span></span><span></span>
+ 		</div>
+		<div class="topbar_block">
+			<img src="img/icon-phone.png" alt="">
+			<a href="tel:+73833495961">+7 (383) 349-59-61</a>
+		</div>
+		<div class="topbar_block">
+			<img src="img/icon-whatsapp.png" alt="">
+			<a href="https://wa.me/79833149138">+7 (983) 314-91-38</a>
+		</div>
+ 		<div class="topbar_block">
+			<img src="img/icon-map_mark.png" alt="">
+			<p>г. Новосибирск, ул. Зональная 2/1</p>
+		</div>
+		<div class="topbar_block">
+			<img src="img/icon-mail.png" alt="">
+			<a href="mailto:info@alfa-kiomi.ru">info@alfa-kiomi.ru</a>
+		</div>
+		<div class="topbar_block">
+			<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
+			<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
+			<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+		</div>
+ 	</div>
+
+ 	<div class="popup menu">
+ 		<div class="close">
+ 			<span></span><span></span>
+ 		</div>
+ 		<ul class="navigation">
+			<li>Каталог</li>
+			<ul class="dropdown_menu">
+				<li><a href="catalog.html">Автозапчасти</a></li>
+				<li><a href="disassemble.html">Авто на разборе</a></li>
+			</ul>
+			<li><a href="about.html">О нас</a></li>
+			<li><a href="warranty.html">Гарантии</a></li>
+			<li><a href="delivery.html">Доставка</a></li>
+			<li><a href="feedback.html">Отзывы</a></li>
+			<li><a href="contact.html">Контакты</a></li>
+		</ul>
+ 	</div>
+
+ 	<div class="popup qr">
+ 		<div class="close">
+ 			<span></span><span></span>
+ 		</div>
+ 		<div class="popup_title">QR code данной запчасти</div>
+		<img src="img/qr_code.png" alt="">
+ 	</div>
+
+ 	<div class="popup gallery">
+ 		<div class="close">
+ 			<span></span><span></span>
+ 		</div>
+ 		<div class="popup_title">Airbag водителя на BMW 3-Series в Новосибирске</div>
+		<div class="gallery-wrap">
+			<div class="gallery_image-wrap">
+				<div class="button previous"><img src="img/slider_arrow-right.png" alt=""></div>
+				<div class="gallery_image-block">
+					<img src="img/product.png" alt="">
+				</div>
+				<div class="button next"><img src="img/slider_arrow-right.png" alt=""></div>
+			</div>
+			<div class="gallery_counter-wrap">
+				( <span class="current_image">1</span>/<span class="all_images">5</span> )
+			</div>
+		</div>
+ 	</div>
+
+ 	<div class="mobile_bottombar">
+ 		<div class="mobile_bottombar-block">
+ 			<img src="img/bottombar-search.png" alt="" class="inactive">
+ 			<img src="img/bottombar-search-active.png" alt="" class="active">
+ 		</div>
+ 		<a href="disassemble.html" class="mobile_bottombar-block">
+ 			<img src="img/bottombar-car.png" alt="" class="inactive">
+ 			<img src="img/bottombar-car-active.png" alt="" class="active">
+ 		</a>
+ 		<div class="mobile_bottombar-block">
+ 			<img src="img/bottombar-favoriate.png" alt="" class="inactive">
+ 			<img src="img/bottombar-favoriate-active.png" alt="" class="active">
+ 		</div>
+ 		<div class="mobile_bottombar-block">
+ 			<img src="img/bottombar-profile.png" alt="" class="inactive">
+ 			<img src="img/bottombar-profile-active.png" alt="" class="active">
+ 		</div>
+ 		<div class="mobile_bottombar-block phone_trigger">
+ 			<img src="img/bottombar-contacts.png" alt="" class="inactive">
+ 			<img src="img/bottombar-contacts-active.png" alt="" class="active">
+ 		</div>
+ 	</div>
+ 	<div class="popup quick__review">
+ 		<div class="quick__review-row">
+ 			<div class="delete_item-button">
+					<span></span>
+					<span></span>
+				</div>
+ 			<div class="image__wrap">
+ 				<img src="img/basket_product.png" alt="">
+ 			</div>
+ 			<div class="text__wrap">
+ 				<div class="goods__type">Запчасть:</div>
+				<div class="goods__name">airbag водителя</div>
+				<div class="quick__review-price">
+					6 800 &#8381;
+				</div>
+ 			</div>
+ 		</div>
+ 		<div class="quick__review-row">
+ 			<div class="delete_item-button">
+					<span></span>
+					<span></span>
+				</div>
+ 			<div class="image__wrap">
+ 				<img src="img/basket_product.png" alt="">
+ 			</div>
+ 			<div class="text__wrap">
+ 				<div class="goods__type">Запчасть:</div>
+				<div class="goods__name">airbag водителя</div>
+				<div class="quick__review-price">
+					6 800 &#8381;
+				</div>
+ 			</div>
+ 		</div>
+ 		<div class="quick__review-row">
+ 			<div class="delete_item-button">
+					<span></span>
+					<span></span>
+				</div>
+ 			<div class="image__wrap">
+ 				<img src="img/basket_product.png" alt="">
+ 			</div>
+ 			<div class="text__wrap">
+ 				<div class="goods__type">Запчасть:</div>
+				<div class="goods__name">airbag водителя</div>
+				<div class="quick__review-price">
+					6 800 &#8381;
+				</div>
+ 			</div>
+ 		</div>
+ 		<div class="quick__review-row">
+ 			<div class="delete_item-button">
+					<span></span>
+					<span></span>
+				</div>
+ 			<div class="image__wrap">
+ 				<img src="img/basket_product.png" alt="">
+ 			</div>
+ 			<div class="text__wrap">
+ 				<div class="goods__type">Запчасть:</div>
+				<div class="goods__name">airbag водителя</div>
+				<div class="quick__review-price">
+					6 800 &#8381;
+				</div>
+ 			</div>
+ 		</div>
+ 		<div class="quick__review-row">
+ 			<div class="delete_item-button">
+					<span></span>
+					<span></span>
+				</div>
+ 			<div class="image__wrap">
+ 				<img src="img/basket_product.png" alt="">
+ 			</div>
+ 			<div class="text__wrap">
+ 				<div class="goods__type">Запчасть:</div>
+				<div class="goods__name">airbag водителя</div>
+				<div class="quick__review-price">
+					6 800 &#8381;
+				</div>
+ 			</div>
+ 		</div>
+ 		<div class="quick__review-summary">
+ 			<div class="summary__wrap">
+				<div class="goods__summary">Итого</div>
+				<div class="price__summary">58 110 &#8381;</div>
+			</div>
+			<a href="order.html">Оформить заказ</a>
+ 		</div>
+ 	</div>
+
+ 	<div id="background"></div>
+ 	<div id="transparentBackground"></div>
+
+  	<header>
+  		<div class="mobile_header">
+  			<div class="hamburger">
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  			</div>
+  			<a href="index.html" class="logo-wrap">
+				<img src="img/logo-header.png" alt="">
+			</a>
+			<div class="phone_trigger"><img src="img/phone_trigger.png" alt=""></div>
+			<div class="navbar_basket-wrap">
+				<img src="img/icon-cart.png" alt="">
+				<p>5</p>
+			</div>
+			<div class="topbar_right-wrap">
+				<div class="topbar_block">
+					<img src="img/icon-lock.png" alt="">
+				</div>
+			</div>
+  		</div>
+		<div class="topbar">
+			<div class="container">
+				<div class="topbar_left-wrap">
+					<div class="topbar_block">
+						<img src="img/icon-map_mark.png" alt="">
+						<p>г. Новосибирск, ул. Зональная 2/1</p>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-mail.png" alt="">
+						<a href="mailto:info@alfa-kiomi.ru">info@alfa-kiomi.ru</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-phone.png" alt="">
+						<a href="tel:+73833495961">+7 (383) 349-59-61</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-whatsapp.png" alt="">
+						<a href="https://wa.me/79833149138">+7 (983) 314-91-38</a>
+					</div>
+					<div class="topbar_block">
+						<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+					</div>
+				</div>
+				<div class="topbar_right-wrap">
+					<div class="topbar_block">
+						<img src="img/icon-lock.png" alt="">
+						<p class="enter_lobby">Вход</p>
+						<span>/</span>
+						<p class="registration_trigger">Регистрация</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar">
+			<div class="container">
+				<a href="index.html" class="logo-wrap">
+					<img src="img/logo-header.png" alt="">
+				</a>
+				<div class="navbar_counter-wrap">
+					<div class="counter_tiles-wrap">
+						<div class="counter_tile-block">
+							<p>4</p>
+						</div>
+						<div class="counter_tile-block">
+							<p>8</p>
+						</div>
+						<div class="counter_tile-block">
+							<p>3</p>
+						</div>
+						<div class="counter_tile-block">
+							<p>2</p>
+						</div>
+						<div class="counter_tile-block">
+							<p>5</p>
+						</div>
+					</div>
+					<p>запчастей <br>сейчас на складе</p>
+				</div>
+				<ul class="navigation">
+					<li>Каталог <img src="img/icon-caret.png" alt="">
+						<ul class="dropdown_menu">
+							<li><a href="catalog.html">Автозапчасти</a></li>
+							<li><a href="disassemble.html">Авто на разборе</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="warranty.html">Гарантии</a></li>
+					<li><a href="delivery.html">Доставка</a></li>
+					<li><a href="feedback.html">Отзывы</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+				</ul>
+				<div class="navbar_basket-wrap">
+					<img src="img/icon-cart.png" alt="">
+					<div class="basket_info-wrap">
+						<p>5  товаров</p>
+						<p>250 000 &#8381;</p>
+					</div>
+				</div>
+				<!-- <div class="popup quick__review">
+			 		<div class="quick__review-row">
+			 			<div class="delete_item-button">
+	  						<span></span>
+	  						<span></span>
+	  					</div>
+			 			<div class="image__wrap">
+			 				<img src="img/basket_product.png" alt="">
+			 			</div>
+			 			<div class="text__wrap">
+			 				<div class="goods__type">Запчасть:</div>
+							<div class="goods__name">airbag водителя</div>
+							<div class="quick__review-price">
+								6 800 &#8381;
+							</div>
+			 			</div>
+			 		</div>
+			 		<div class="quick__review-row">
+			 			<div class="delete_item-button">
+	  						<span></span>
+	  						<span></span>
+	  					</div>
+			 			<div class="image__wrap">
+			 				<img src="img/basket_product.png" alt="">
+			 			</div>
+			 			<div class="text__wrap">
+			 				<div class="goods__type">Запчасть:</div>
+							<div class="goods__name">airbag водителя</div>
+							<div class="quick__review-price">
+								6 800 &#8381;
+							</div>
+			 			</div>
+			 		</div>
+			 		<div class="quick__review-row">
+			 			<div class="delete_item-button">
+	  						<span></span>
+	  						<span></span>
+	  					</div>
+			 			<div class="image__wrap">
+			 				<img src="img/basket_product.png" alt="">
+			 			</div>
+			 			<div class="text__wrap">
+			 				<div class="goods__type">Запчасть:</div>
+							<div class="goods__name">airbag водителя</div>
+							<div class="quick__review-price">
+								6 800 &#8381;
+							</div>
+			 			</div>
+			 		</div>
+			 		<div class="quick__review-summary">
+			 			<div class="summary__wrap">
+							<div class="goods__summary">Итого</div>
+							<div class="price__summary">58 110 &#8381;</div>
+						</div>
+						<a href="order.html">Оформить заказ</a>
+			 		</div>
+			 	</div> -->
+			</div>
+		</div>
+  	</header>
+
+  	<div class="content">
+  		<div class="container">
+  			<div class="breadcrumbs">
+  				<a href="index.html">Главная</a>
+  				<a class="arrow"><img src="img/breadcrumbs_arrow.png" alt=""></a>
+  				<a href="basket.html">Корзина</a>
+  			</div>
+	  		<div class="basket_content-wrap">
+	  			<h1>Корзина</h1>
+	  			<p class="warning">Наличие товара в Корзине не означает его резервирование. Заказ поступает к нам только после оформления и оплаты!</p>
+	  			<div class="basket_table-wrap">
+	  				<div class="basket_table-header">
+	  					<div class="description_cell">Наименование / описание</div>
+	  					<div class="amount_cell">Кол-во</div>
+	  					<div class="price_cell">Цена за штуку ₽</div>
+	  					<div class="commonPrice_cell">Общая цена ₽</div>
+	  					<div class="discount_cell">Скидка %</div>
+	  					<div class="totalPrice_cell">Цена со скидкой ₽</div>
+	  				</div>
+	  				<div class="basket_table-row">
+  						<div class="img_wrap"><img src="img/basket_product.png" alt=""></div>
+  						<p class="description_body">Запчасть: airbag водителя</p>
+	  					<div class="amount_cell">
+	  						<div class="amount_wrap">
+	  							<div class="button reduce_amount"><span></span></div>
+	  							<input type="number">
+	  							<div class="button increase_amount"><span></span><span></span></div>
+	  						</div>
+	  					</div>
+	  					<div class="price_cell"><div class="mobile_title">Цена за штуку ₽:</div>6 800</div>
+	  					<div class="commonPrice_cell"><div class="mobile_title">Общая цена ₽:</div>6 800</div>
+	  					<div class="discount_cell"><div class="mobile_title">Скидка %:</div>0</div>
+	  					<div class="totalPrice_cell"><div class="mobile_title">Цена со скидкой ₽:</div>6 800</div>
+	  					<div class="delete_item-button">
+	  						<span></span>
+	  						<span></span>
+	  					</div>
+	  				</div>
+	  				<div class="basket_table-row">
+  						<div class="img_wrap"><img src="img/basket_product.png" alt=""></div>
+  						<p class="description_body">Запчасть: airbag водителя</p>
+	  					<div class="amount_cell">
+	  						<div class="amount_wrap">
+	  							<div class="button reduce_amount"><span></span></div>
+	  							<input type="number">
+	  							<div class="button increase_amount"><span></span><span></span></div>
+	  						</div>
+	  					</div>
+	  					<div class="price_cell"><div class="mobile_title">Цена за штуку ₽:</div>6 800</div>
+	  					<div class="commonPrice_cell"><div class="mobile_title">Общая цена ₽:</div>6 800</div>
+	  					<div class="discount_cell"><div class="mobile_title">Скидка %:</div>0</div>
+	  					<div class="totalPrice_cell"><div class="mobile_title">Цена со скидкой ₽:</div>6 800</div>
+	  					<div class="delete_item-button">
+	  						<span></span>
+	  						<span></span>
+	  					</div>
+	  				</div>
+	  				<div class="basket_table-row">
+  						<div class="img_wrap"><img src="img/basket_product.png" alt=""></div>
+  						<p class="description_body">Запчасть: airbag водителя</p>
+	  					<div class="amount_cell">
+	  						<div class="amount_wrap">
+	  							<div class="button reduce_amount"><span></span></div>
+	  							<input type="number">
+	  							<div class="button increase_amount"><span></span><span></span></div>
+	  						</div>
+	  					</div>
+	  					<div class="price_cell"><div class="mobile_title">Цена за штуку ₽:</div>6 800</div>
+	  					<div class="commonPrice_cell"><div class="mobile_title">Общая цена ₽:</div>6 800</div>
+	  					<div class="discount_cell"><div class="mobile_title">Скидка %:</div>0</div>
+	  					<div class="totalPrice_cell"><div class="mobile_title">Цена со скидкой ₽:</div>6 800</div>
+	  					<div class="delete_item-button">
+	  						<span></span>
+	  						<span></span>
+	  					</div>
+	  				</div>
+	  				<p class="total_table-price">Всего 4 товар(ов) на сумму: 25 400 ₽</p>
+	  				<p class="total_amount-pay">Общая сумма: 25 400 ₽</p>
+	  			</div>
+	  			<button class="complete_buy">Оформить заказ</button>
+	  		</div>
+  		</div>
+  	</div>
+
+  	<footer>
+  		<div class="top_part">
+  			<div class="container">
+  				<div class="footer_block">
+	  				<a href="index.html" class="footer_logo-wrap"><img src="img/logo-footer.png" alt=""></a>
+	  				<p class="copyright">ООО "АЛЬФА-КИОМИ" © 2007-2021</p>
+	  				<div class="topbar_block">
+						<img src="img/icon-map_mark.png" alt="">
+						<p>г. Новосибирск, ул. Зональная 2/1</p>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-mail.png" alt="">
+						<a href="mailto:info@alfa-kiomi.ru">info@alfa-kiomi.ru</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-phone.png" alt="">
+						<a href="tel:+73833495961">+7 (383) 349-59-61</a>
+					</div>
+					<div class="topbar_block">
+						<img src="img/icon-whatsapp.png" alt="">
+						<a href="https://wa.me/79833149138">+7 (983) 314-91-38</a>
+					</div>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">Меню</div>
+	  				<ul>
+	  					<Li><a href="#">Каталог</a></Li>
+	  					<Li><a href="#">О магазине</a></Li>
+	  					<Li><a href="#">Гарантия</a></Li>
+	  					<Li><a href="#">Доставка</a></Li>
+	  					<Li><a href="#">Способы оплаты</a></Li>
+	  					<Li><a href="#">Отзывы и предложения</a></Li>
+	  					<Li><a href="#">Контакты</a></Li>
+	  				</ul>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">категории</div>
+	  				<ul>
+	  					<Li><a href="#">ДВС</a></Li>
+	  					<Li><a href="#">Кузов</a></Li>
+	  					<Li><a href="#">Оптика</a></Li>
+	  					<Li><a href="#">Подвеска</a></Li>
+	  					<Li><a href="#">Электрика</a></Li>
+	  					<Li><a href="#">Аксессуары</a></Li>
+	  					<Li><a href="#">Автохимия</a></Li>
+	  					<Li><a href="#">Прочее</a></Li>
+	  				</ul>
+	  			</div>
+	  			<div class="footer_block">
+	  				<div class="footer_block-title">СОЦСЕТИ</div>
+	  				<div class="footer_soial-wrap">
+	  					<a href="#" class="drom">
+	  						<img src="img/icon-drom.png" alt="">
+	  						<span>Мы на Drom.ru</span>
+	  					</a>
+	  					<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
+						<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+	  				</div>
+	  				<div class="footer_block-title">способы оплаты</div>
+	  				<div class="foter_payments-wrap">
+	  					<img src="img/icon-visa.png" alt="">
+	  					<img src="img/icon-mastercard.png" alt="">
+	  					<img src="img/icon-maestro.png" alt="">
+	  					<img src="img/icon-mir.png" alt="">
+	  					<img src="img/icon-jcb.png" alt="">
+	  					<img src="img/icon-webmoney.png" alt="">
+	  					<img src="img/icon-qiwi.png" alt="">
+	  					<img src="img/icon-sberbank.png" alt="">
+	  					<img src="img/icon-alfa.png" alt="">
+	  					<img src="img/icon-youmoney.png" alt="">
+	  				</div>
+	  			</div>
+  			</div>
+  		</div>
+  		<div class="bottom_part">
+  			<div class="container">
+  				<a href="#">Политика конфиденциальности</a>
+  				<a href="#">Использование Cookies</a>
+  				<a href="#">Пользовательское соглашение</a>
+  				<div class="madeBy_wrap">
+  					<p>Дизайн сайта: </p>
+  					<a href="https://mvacorp.com">MvaCorp</a>
+  				</div>
+  			</div>
+  		</div>
+  	</footer>
+
+ </div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+	<script src="lib/slick/slick.js"></script>
+	<script src="lib/jquery.maskedinput/jquery.maskedinput.js"></script>
+	<script src="lib/ResponsiveImageGallery/js/jquery.easing.1.3.js"></script>
+	<script src="lib/ResponsiveImageGallery/js/jquery.tmpl.min.js"></script>
+	<script src="lib/ResponsiveImageGallery/js/jquery.elastislide.js"></script>
+	<script src="lib/ResponsiveImageGallery/js/gallery.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
