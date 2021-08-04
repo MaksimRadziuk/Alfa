@@ -295,6 +295,91 @@ $(document).ready(function(){
 		$('.process_graph-forth').addClass('active');
 	})
 
+	if ($(window).innerWidth()<781) {
+		$('#byuerDataSend').click(function(){
+			$('#byuerData').removeClass('active');
+			$('#deliveryOption').addClass('active');
+			$('.process_graph-second').addClass('active');
+			let transformLeft = $('.process_graph').width();
+			$('.process_line-graphs').css('left', -transformLeft);
+		})
+		$('#deliveryOptionSend').click(function(){
+			$('#deliveryOption').removeClass('active');
+			$('#paymentOption').addClass('active');
+			$('.process_graph-third').addClass('active');
+			let transformLeft = $('.process_graph').width();
+			$('.process_line-graphs').css('left', -transformLeft*2);
+		})
+		$('#backToByuerData').click(function(){
+			$('#deliveryOption').removeClass('active');
+			$('#byuerData').addClass('active');
+			$('.process_graph-second').removeClass('active');
+			$('.process_line-graphs').css('left', '0');
+		})
+		$('#backToDeliveryOption').click(function(){
+			$('#paymentOption').removeClass('active');
+			$('#deliveryOption').addClass('active');
+			$('.process_graph-third').removeClass('active');
+			let transformLeft = $('.process_graph').width();
+			$('.process_line-graphs').css('left', -transformLeft);
+		})
+		$('#paymentOptionSend').click(function(){
+			$('#paymentOption').removeClass('active');
+			$('#orderClosure').addClass('active');
+			$('.process_graph-forth').addClass('active');
+			let transformLeft = $('.process_graph').width();
+			$('.process_line-graphs').css('left', -transformLeft*3);
+		})
+	}
+	if ($(window).innerWidth()>=781) {
+		$('.process_line-graphs').css('left', '0');
+		$('#byuerDataSend').click(function(){
+			$('#byuerData').removeClass('active');
+			$('#deliveryOption').addClass('active');
+			$('.process_graph-second').addClass('active');
+		})
+		$('#deliveryOptionSend').click(function(){
+			$('#deliveryOption').removeClass('active');
+			$('#paymentOption').addClass('active');
+			$('.process_graph-third').addClass('active');
+		})
+		$('#backToByuerData').click(function(){
+			$('#deliveryOption').removeClass('active');
+			$('#byuerData').addClass('active');
+			$('.process_graph-second').removeClass('active');
+		})
+		$('#backToDeliveryOption').click(function(){
+			$('#paymentOption').removeClass('active');
+			$('#deliveryOption').addClass('active');
+			$('.process_graph-third').removeClass('active');
+		})
+		$('#paymentOptionSend').click(function(){
+			$('#paymentOption').removeClass('active');
+			$('#orderClosure').addClass('active');
+			$('.process_graph-forth').addClass('active');
+		})
+	}
+	else{}
+
+	$(window).resize(function(){
+		if ($(window).innerWidth()<781 && $('#deliveryOption').hasClass('active')) {
+			let transformLeft = $('.process_graph').width();
+			$('.process_line-graphs').css('left', -transformLeft);
+		}
+		if ($(window).innerWidth()<781 && $('#paymentOption').hasClass('active')) {
+			let transformLeft = $('.process_graph').width();
+			$('.process_line-graphs').css('left', -transformLeft*2);
+		}
+		if ($(window).innerWidth()<781 && $('#orderClosure').hasClass('active')) {
+			let transformLeft = $('.process_graph').width();
+			$('.process_line-graphs').css('left', -transformLeft*3);
+		}
+		if ($(window).innerWidth()>=781) {
+			$('.process_line-graphs').css('left', '0');
+		}
+		else {}
+	})
+
 });
 
 var input = document.querySelector("#phone");
