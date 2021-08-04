@@ -1392,11 +1392,12 @@ footer .madeBy_wrap a {
 	.quick__review {
 		padding: 0;
 		top: 48px;
-		max-height: calc(100vh - 50px);
-		overflow-y: auto;
 	}
 	.quick__review-row {
 		padding: 15px 25px;
+	}
+	.quick_review-wrap {
+		max-height: calc(100vh - 280px)
 	}
 }
 @media all and (max-width: 360px) {
