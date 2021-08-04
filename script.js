@@ -257,6 +257,18 @@ $(document).ready(function(){
 		$(this).parent('.basket_table-row, .quick__review-row').remove();
 	})
 
+	$('.option_block').click(function(){
+		if ($(this).hasClass('active')) {
+
+		}
+		else {
+			$('.option_block').removeClass('active');
+			$(this).addClass('active');
+			$('.option_content').slideUp();
+			$(this).next('.option_content').slideDown();
+		}		
+	})
+
 });
 
 var input = document.querySelector("#phone");

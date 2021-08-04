@@ -337,11 +337,16 @@ p.notification {
 .option_block .caret {
 	transform-origin: center;
 	transform: rotateZ(180deg);
+	transition: all 0.2s linear;
+}
+.option_block.active .caret {
+	transform: rotateZ(0deg);
 }
 
 .option_content {
 	border-top: 1px solid #e2e5e8;
 	padding: 30px 40px;
+	display: none;
 }
 .option_content p.title {
 	font-size: 17px;
@@ -396,3 +401,4 @@ p.notification {
 	color: var(--red-color);
 	font-size: 15px;
 }
+
