@@ -269,6 +269,32 @@ $(document).ready(function(){
 		}		
 	})
 
+	$('#byuerDataSend').click(function(){
+		$('#byuerData').removeClass('active');
+		$('#deliveryOption').addClass('active');
+		$('.process_graph-second').addClass('active');
+	})
+	$('#deliveryOptionSend').click(function(){
+		$('#deliveryOption').removeClass('active');
+		$('#paymentOption').addClass('active');
+		$('.process_graph-third').addClass('active');
+	})
+	$('#backToByuerData').click(function(){
+		$('#deliveryOption').removeClass('active');
+		$('#byuerData').addClass('active');
+		$('.process_graph-second').removeClass('active');
+	})
+	$('#backToDeliveryOption').click(function(){
+		$('#paymentOption').removeClass('active');
+		$('#deliveryOption').addClass('active');
+		$('.process_graph-third').removeClass('active');
+	})
+	$('#paymentOptionSend').click(function(){
+		$('#paymentOption').removeClass('active');
+		$('#orderClosure').addClass('active');
+		$('.process_graph-forth').addClass('active');
+	})
+
 });
 
 var input = document.querySelector("#phone");
