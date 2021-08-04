@@ -35,13 +35,15 @@ button {
 	display: block;
 	margin: 0 auto;
 }
-select, input {
+select, input,
+textarea {
 	border: none;
 	background: rgba(255,255,255,1);
 	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
 }
 input:focus,
-select:focus {
+select:focus,
+textarea:focus {
 	outline: none;
 }
 img {
@@ -283,7 +285,7 @@ a {
 	position: absolute;
 	right: 1px;
 	top: 1px;
-	height: 46px;
+	height: calc(100% - 4px);
 	background-color: #fff;
 	width: 30px;
 	background-image: url(../img/icon-caret.png);
@@ -919,6 +921,20 @@ footer .madeBy_wrap a {
 	top: 25px;
 	right: 25px;
 	transform: none;
+	position: absolute;
+}
+.quick__review-row .delete_item-button>span{
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 3px;
+	background-color: var(--red-color);
+	transform: translateY(-50%) rotateZ(45deg);
+}
+.quick__review-row .delete_item-button>span:last-child {
+	transform: translateY(-50%) rotateZ(-45deg);
 }
 .quick__review-summary {
 	width: 100%;
