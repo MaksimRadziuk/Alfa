@@ -372,6 +372,9 @@ p.notification {
 	margin-bottom: 20px;
 	padding-left: 20px;
 }
+.option_content.phone input.long {
+	margin-bottom: 0;
+}
 .option_content input.short {
 	width: 80px;
 	padding-left: 20px;

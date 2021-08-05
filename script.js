@@ -380,6 +380,33 @@ $(document).ready(function(){
 		else {}
 	})
 
+	$('#aboutFirstSlider, #disassembleSlder, #carChoose, #avaliabilitySlder, #complexSlider').slick({
+	  dots: true,
+	  arrows: true,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 3,
+	  slidesToScroll: 2,
+	  responsive: [
+	    {
+	      breakpoint: 1381,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 901,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1,
+	        dots:false,
+	        arrows:false
+	      }
+	    }
+	  ]
+	});
+
 });
 
 var input = document.querySelector("#phone");
