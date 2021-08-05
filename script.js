@@ -411,5 +411,11 @@ $(document).ready(function(){
 
 var input = document.querySelector("#phone");
   window.intlTelInput(input, {
-    // any initialisation options go here
-  });
+  initialCountry: "auto",
+  geoIpLookup: function(success, failure) {
+    $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      var countryCode = (resp && resp.country) ? resp.country : "ru";
+      success(countryCode);
+    });
+  },
+});

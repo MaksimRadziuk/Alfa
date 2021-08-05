@@ -41,7 +41,7 @@ ul.advantages_list>li:before {
 	width: 30px;
 	height: 30px;
 	position: absolute;
-	border: 1px solid var(--red-color);
+	border: 2px solid var(--red-color);
 	border-radius: 50%;
 	background-image: url(../img/checked.png);
 	background-size: 90% 90%;
