@@ -389,14 +389,7 @@ $(document).ready(function(){
 	  slidesToScroll: 2,
 	  responsive: [
 	    {
-	      breakpoint: 1381,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 2
-	      }
-	    },
-	    {
-	      breakpoint: 901,
+	      breakpoint: 1001,
 	      settings: {
 	        slidesToShow: 2,
 	        slidesToScroll: 1,
