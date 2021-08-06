@@ -813,6 +813,8 @@ footer .top_part .container {
 	float: left;
 	margin-right: 30px;
 	margin-bottom: 25px;
+	height: 40px;
+	width: auto;
 }
 .footer_block:last-child .footer_block-title {
 	margin-bottom: 20px;
@@ -1403,6 +1405,9 @@ footer .madeBy_wrap a {
 	}
 	.quick_review-wrap {
 		max-height: calc(100vh - 280px)
+	}
+	.foter_payments-wrap img {
+		height: 35px;
 	}
 }
 @media all and (max-width: 360px) {
