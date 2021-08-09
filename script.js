@@ -400,6 +400,19 @@ $(document).ready(function(){
 	  ]
 	});
 
+	$('.tab_header-block').click(function(){
+		$('.tab_header-block').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('#webSiteFeedbackTrigger').click(function(){
+		$('.tab_content-block').removeClass('active');
+		$('#webSiteFeedback').addClass('active');
+	})
+	$('#dromSiteFeedbackTrigger').click(function(){
+		$('.tab_content-block').removeClass('active');
+		$('#dromSiteFeedback').addClass('active');
+	})
+
 });
 
 var input = document.querySelector("#phone");
