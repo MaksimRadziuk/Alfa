@@ -149,16 +149,40 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	})
 	$('#filterFirstTrigger').click(function(){
-		$('.filter__tab').removeClass('active');
-		$('#filterFirst').addClass('active');
+		if ($(window).innerWidth()<641) {
+			$('.filter__tab').removeClass('active');
+			$('#filterFirst').addClass('active');
+			let toFilter = $('#filterFirst').offset().top;
+			$("html, body").scrollTop(toFilter);
+		}
+		else{
+			$('.filter__tab').removeClass('active');
+			$('#filterFirst').addClass('active');
+		}
 	})
 	$('#filterSecondTrigger').click(function(){
-		$('.filter__tab').removeClass('active');
-		$('#filterSecond').addClass('active');
+		if ($(window).innerWidth()<641) {
+			$('.filter__tab').removeClass('active');
+			$('#filterSecond').addClass('active');
+			let toFilter = $('#filterSecond').offset().top;
+			$("html, body").scrollTop(toFilter);
+		}
+		else{
+			$('.filter__tab').removeClass('active');
+			$('#filterSecond').addClass('active');
+		}
 	})
 	$('#filterThirdTrigger').click(function(){
-		$('.filter__tab').removeClass('active');
-		$('#filterThird').addClass('active');
+		if ($(window).innerWidth()<641) {
+			$('.filter__tab').removeClass('active');
+			$('#filterThird').addClass('active');
+			let toFilter = $('#filterThird').offset().top;
+			$("html, body").scrollTop(toFilter);
+		}
+		else{
+			$('.filter__tab').removeClass('active');
+			$('#filterThird').addClass('active');
+		}
 	})
 
 	$('#tabSecondStep1 .filter_step2-block').click(function(){
