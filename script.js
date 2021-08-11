@@ -437,6 +437,21 @@ $(document).ready(function(){
 		$('#dromSiteFeedback').addClass('active');
 	})
 
+
+	$('.tab_button').click(function(){
+		$('.tab_button').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('#lobbyTrigger').click(function(){
+		$('.lobby_content-wrap').removeClass('active');
+		$('#lobby').addClass('active');
+	})
+	$('#historyTrigger').click(function(){
+		$('.lobby_content-wrap').removeClass('active');
+		$('#history').addClass('active');
+	})
+
+
 });
 
 var input = document.querySelector("#phone");
