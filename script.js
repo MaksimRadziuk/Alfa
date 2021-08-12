@@ -457,6 +457,8 @@ $(document).ready(function(){
 var input = document.querySelector("#phone");
   window.intlTelInput(input, {
   initialCountry: "auto",
+  separateDialCode: true,
+  autoPlaceholder: "aggressive",
   geoIpLookup: function(success, failure) {
     $.get("https://ipinfo.io", function() {}, "jsonp").always(function(resp) {
       var countryCode = (resp && resp.country) ? resp.country : "ru";
