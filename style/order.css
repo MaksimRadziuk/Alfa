@@ -413,6 +413,11 @@ p.notification {
 	color: var(--red-color);
 	font-size: 15px;
 }
+.iti--separate-dial-code .iti__selected-flag {
+	background-color: #fff;
+}
+
+
 @media all and (max-width: 1700px) {
 	.step_content-wrap {
 	    -ms-grid-columns: 40% 55%;
