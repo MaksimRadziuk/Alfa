@@ -1201,6 +1201,10 @@ footer .madeBy_wrap a {
 		font-size: 17px;
 		padding: 20px 10px;
 	}
+	.popup.menu ul.navigation>li.no_p {
+		padding: 0;
+		width: 100%
+	}
 	.popup.menu ul.navigation>li>a {
 		font-size: 17px;
 	}
