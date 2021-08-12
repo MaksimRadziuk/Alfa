@@ -401,7 +401,10 @@ $(document).ready(function(){
 		if ($(window).innerWidth()>=781) {
 			$('.process_line-graphs').css('left', '0');
 		}
-		else {}
+		else {
+			let wrapWidth = $('.select2-container').parent('.select_wrap').innerWidth();
+			$('.select2-container').css({width: "wrapWidth"})
+		}
 	})
 
 	$('#aboutFirstSlider, #disassembleSlder, #carChoose, #avaliabilitySlder, #complexSlider').slick({
@@ -451,6 +454,9 @@ $(document).ready(function(){
 		$('#history').addClass('active');
 	})
 
+
+
+	$('.js-example-basic-single').select2({width: 'resolve'});
 
 });
 
