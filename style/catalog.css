@@ -665,36 +665,40 @@ p.catalog_found-amount>span{
 .catalog_filter-block.amount .select_wrap {
 	width: 110px;
 }
+
 .resuts_view-triggers {
-	width: 80px;
+	width: 100px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	height: 50px;
 }
 .view_trigger-button {
 	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 50px;
+	background-position: 0 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/result_icons-sprite.png);
 	cursor: pointer;
 }
-.view_trigger-button img {
-	height: 15px;
+.view_trigger-button#tileViewFilter {
+	background-position: -79px 0;
 }
-.view_trigger-button img.active {
-	opacity: 0;
-	width: 0;
-	visibility: hidden;
+.view_trigger-button#rowViewFilter {
+	background-position: 0 0;
 }
-.view_trigger-button.active img.active {
-	opacity: 1;
-	width: auto;
-	visibility: visible;
+.view_trigger-button#tileViewFilter:hover {
+	background-position: -113px 0;
 }
-.view_trigger-button.active img.inactive {
-	opacity: 0;
-	width: 0;
-	visibility: hidden;
+.view_trigger-button#rowViewFilter:hover {
+	background-position: -40px 0;
+}
+.view_trigger-button#tileViewFilter.active {
+	background-position: -113px 0;
+}
+.view_trigger-button#rowViewFilter.active {
+	background-position: -40px 0;
 }
 
 
@@ -764,9 +768,6 @@ p.catalog_found-amount>span{
 	}
 	.catalog_filter-block.amount .select_wrap {
 		width: 85px
-	}
-	.resuts_view-triggers {
-		width: 60px;
 	}
 	h1 {
 		font-size: 28px;

@@ -93,10 +93,53 @@ h3 {
 	text-align: center;
 	padding-bottom: 90px;
 }
-.payment_options-wrap img {
+.payment_options-wrap .img_wrap {
 	display: inline-block;
 	margin-right: 40px;
 	margin-bottom: 30px;
+	height: 65px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/footer_payments-sprite.png);
+}
+.payment_options-wrap .img_wrap.visa {
+	width: 111px;
+}
+.payment_options-wrap .img_wrap.mastercard {
+	width: 87px;
+	background-position: -212px 0;
+}
+.payment_options-wrap .img_wrap.maestro {
+	width: 86px;
+	background-position: -395px 0;
+}
+.payment_options-wrap .img_wrap.mir {
+	width: 99px;
+	background-position: -489px 0;
+}
+.payment_options-wrap .img_wrap.jcb {
+	width: 57px;
+	background-position: -602px 0;
+}
+.payment_options-wrap .img_wrap.webmoney {
+	width: 185px;
+	background-position: -672px 0;
+}
+.payment_options-wrap .img_wrap.qiwi {
+	width: 132px;
+	background-position: -865px 0;
+}
+.payment_options-wrap .img_wrap.sberbank {
+	width: 155px;
+	background-position: -1003px 0;
+}
+.payment_options-wrap .img_wrap.alfa {
+	width: 176px;
+	background-position: -1164px 0;
+}
+.payment_options-wrap .img_wrap.yoomoney {
+	width: 145px;
+	background-position: -1512px 0;
 }
 
 @media all and (max-width: 1380px) {
@@ -147,17 +190,53 @@ h3 {
 	.policy_wrap .img_wrap {
 		margin: 0 auto;
 	}
-	.payment_options-wrap img {
+	.payment_options-wrap .img_wrap {
 		height: 50px;
+	}
+	.payment_options-wrap .img_wrap.visa {
+		width: 82px;
+	}
+	.payment_options-wrap .img_wrap.mastercard {
+		width: 69px;
+		background-position: -162px 0;
+	}
+	.payment_options-wrap .img_wrap.maestro {
+		width: 68px;
+		background-position: -304px 0;
+	}
+	.payment_options-wrap .img_wrap.mir {
+		width: 77px;
+		background-position: -376px 0;
+	}
+	.payment_options-wrap .img_wrap.jcb {
+		width: 47px;
+		background-position: -463px 0;
+	}
+	.payment_options-wrap .img_wrap.webmoney {
+		width: 145px;
+		background-position: -515px 0;
+	}
+	.payment_options-wrap .img_wrap.qiwi {
+		width: 98px;
+		background-position: -665px 0;
+	}
+	.payment_options-wrap .img_wrap.sberbank {
+		width: 116px;
+		background-position: -771px 0;
+	}
+	.payment_options-wrap .img_wrap.alfa {
+		width: 135px;
+		background-position: -895px 0;
+	}
+	.payment_options-wrap .img_wrap.yoomoney {
+		width: 113px;
+		background-position: -1162px 0;
 	}
 	.policy_wrap .text_wrap {
 		padding-right: 0
 	}
 }
 @media all and (max-width: 700px) {
-	.payment_options-wrap img {
-		height: 40px;
-	}
 	h2 {
 		font-size: 24px
 	}
@@ -203,9 +282,48 @@ h3 {
 	h3 {
 		font-size: 15px
 	}
-	.payment_options-wrap img {
+	.payment_options-wrap .img_wrap {
 		height: 29px;
 		margin-right: 25px;
 		margin-bottom: 20px;
+	}
+	.payment_options-wrap .img_wrap.visa {
+		width: 48px;
+	}
+	.payment_options-wrap .img_wrap.mastercard {
+		width:39px;
+		background-position: -94px 0;
+	}
+	.payment_options-wrap .img_wrap.maestro {
+		width: 41px;
+		background-position: -176px 0;
+	}
+	.payment_options-wrap .img_wrap.mir {
+		width:45px;
+		background-position: -218px 0;
+	}
+	.payment_options-wrap .img_wrap.jcb {
+		width: 28px;
+		background-position: -266px 0;
+	}
+	.payment_options-wrap .img_wrap.webmoney {
+		width: 82px;
+		background-position: -299px 0;
+	}
+	.payment_options-wrap .img_wrap.qiwi {
+		width: 58px;
+		background-position: -385px 0;
+	}
+	.payment_options-wrap .img_wrap.sberbank {
+		width: 68px;
+		background-position: -447px 0;
+	}
+	.payment_options-wrap .img_wrap.alfa {
+		width: 80px;
+		background-position: -518px 0;
+	}
+	.payment_options-wrap .img_wrap.yoomoney {
+		width: 65px;
+		background-position: -674px 0;
 	}
 }

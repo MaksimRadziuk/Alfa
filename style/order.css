@@ -324,15 +324,22 @@ p.notification {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
-	overflow: hidden;
 	margin-right: 30px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: auto 100%;
+	background-image: url(../img/order_payment-sprite.png);
 }
-.option_block .img_wrap>img {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
+.option_block.bankCard .img_wrap {
+	background-position: 0 0;
 }
+.option_block.yoomoney .img_wrap{
+	background-position: -96px 0;
+}
+.option_block.sberPay .img_wrap{
+	background-position: -48px 0;
+}
+
 .option_block p>span:first-child {
 	font-size: 21px;
 	display: block;

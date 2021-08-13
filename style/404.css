@@ -5,12 +5,12 @@ header {
 .content {
 	padding-bottom: 10vw;
 }
-.img_wrap {
+.content .img_wrap {
 	width: 100%;
 	max-width: 1100px;
 	margin: 8vw auto 110px auto;
 }
-.img_wrap>img {
+.content .img_wrap>img {
 	width: 100%;
 	height: auto;
 }
