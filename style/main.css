@@ -62,7 +62,7 @@ h1 span.secondary_title {
 	height: 100%;
 	cursor: pointer;
 }
-.filter__tab-trigger img {
+.filter__tab-trigger>.img_wrap {
 	display: none;
 }
 .filter__tab-trigger br {
@@ -128,29 +128,30 @@ h1 span.secondary_title {
 }
 .view_trigger-button {
 	height: 100%;
-	padding: 0 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 50px;
+	background-position: 0 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/result_icons-sprite.png);
 	cursor: pointer;
 }
-.view_trigger-button img {
-	height: 15px;
+.view_trigger-button#tileViewFilter {
+	background-position: -79px 0;
 }
-.view_trigger-button img.active {
-	opacity: 0;
-	width: 0;
-	visibility: hidden;
+.view_trigger-button#rowViewFilter {
+	background-position: 0 0;
 }
-.view_trigger-button.active img.active {
-	opacity: 1;
-	width: auto;
-	visibility: visible;
+.view_trigger-button#tileViewFilter:hover {
+	background-position: -113px 0;
 }
-.view_trigger-button.active img.inactive {
-	opacity: 0;
-	width: 0;
-	visibility: hidden;
+.view_trigger-button#rowViewFilter:hover {
+	background-position: -40px 0;
+}
+.view_trigger-button#tileViewFilter.active {
+	background-position: -113px 0;
+}
+.view_trigger-button#rowViewFilter.active {
+	background-position: -40px 0;
 }
 
 .filter_result-wrap {
@@ -358,10 +359,44 @@ h2 {
 }
 .advantages_img-wrap {
 	height: 50px;
+	background-position: 0 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/advantages_icons-sprite.png);
 }
-.advantages_img-wrap img {
-	height: 100%;
+.advantages_img-wrap.parts{
+	width: 56px;
+	background-position: -341px 0;
 }
+.advantages_img-wrap.packing{
+	width: 61px;
+	background-position: -276px 0;
+}
+.advantages_img-wrap.delivery_speed{
+	width: 83px;
+	background-position: -192px 0;
+}
+.advantages_img-wrap.safe_packing{
+	width: 62px;
+	background-position: -396px 0;
+}
+.advantages_img-wrap.actual_info{
+	width: 60px;
+	background-position: 0px 0;
+}
+.advantages_img-wrap.client_informing{
+	width: 78px;
+	background-position: -62px 0;
+}
+.advantages_img-wrap.wallet{
+	width: 53px;
+	background-position: -459px 0;
+}
+.advantages_img-wrap.delivery{
+	width: 50px;
+	background-position: -145px 0;
+}
+
 .advantages_block-title {
 	margin: 30px 0;
 	font-size: 23px;
@@ -614,35 +649,77 @@ h2.blackbox_title {
 }
 .filter_step2-block {
 	width: 100%;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	cursor: pointer;
 }
 .filter_step2-block .img_wrap {
-	width: 100%;
+	height: 82px;
+	background-position: 0 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/step2_filter-sprite.png);
 }
-.filter_step2-block .img_wrap img {
-	margin: 0 auto;
+.filter_step2-block.engine .img_wrap{
+	width: 85px;
+	background-position: -591px 0;
 }
-.filter_step2-block .img_wrap .inactive {
-	opacity: 1;
-	visibility: visible;
-	display: block;
+.filter_step2-block.body .img_wrap{
+	width: 70px;
+	background-position: -443px 0;
 }
-.filter_step2-block .img_wrap .active {
-	opacity: 0;
-	visibility: hidden;
-	display: none;
+.filter_step2-block.optics .img_wrap{
+	width: 97px;
+	background-position: -1060px 0;
 }
-.filter_step2-block:hover .img_wrap .inactive {
-	opacity: 0;
-	visibility: hidden;
-	display: none;
+.filter_step2-block.suspension .img_wrap{
+	width: 57px;
+	background-position: -936px 0;
 }
-.filter_step2-block:hover .img_wrap .active {
-	opacity: 1;
-	visibility: visible;
-	display: block;
+.filter_step2-block.electric .img_wrap{
+	width: 77px;
+	background-position: -3px 0;
 }
+.filter_step2-block.accessories .img_wrap{
+	width: 78px;
+	background-position: -279px 0;
+}
+.filter_step2-block.chemistry .img_wrap{
+	width: 54px;
+	background-position: -167px 0;
+}
+.filter_step2-block.others .img_wrap{
+	width: 78px;
+	background-position: -768px 0;
+}
+
+.filter_step2-block.engine:hover .img_wrap{
+	background-position: -680px 0;
+}
+.filter_step2-block.body:hover .img_wrap{
+	background-position: -519px 0;
+}
+.filter_step2-block.optics:hover .img_wrap{
+	background-position: -1162px 0;
+}
+.filter_step2-block.suspension:hover .img_wrap{
+	background-position: -1000px 0;
+}
+.filter_step2-block.electric:hover .img_wrap{
+	background-position: -84px 0;
+}
+.filter_step2-block.accessories:hover .img_wrap{
+	background-position: -357px 0;
+}
+.filter_step2-block.chemistry:hover .img_wrap{
+	background-position: -226px 0;
+}
+.filter_step2-block.others:hover .img_wrap{
+	background-position: -851px 0;
+}
+
 .filter_step2-block p {
 	font-size: 19px;
 	margin-top: 40px;
@@ -684,26 +761,94 @@ h2.blackbox_title {
 	text-align: center;
 }
 .car_model-block {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	margin: 25px 30px;
 	cursor: pointer;
 }
 .car_model-block .img_wrap {
 	height: 65px;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	background-position: 0 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/car_make-sprite.png);
 }
-.car_model-block .img_wrap img {
-	width: auto;
-	height: 100%;
-	object-fit: cover;
-	transition: all 0.1s linear;
+
+.car_model-block.audi .img_wrap {
+	width: 87px;
+	background-position: 0 0;
 }
-.car_model-block:hover .img_wrap img {
-	transform: scale(1.1);
+.car_model-block.bmw .img_wrap{
+	width: 67px;
+	background-position: -87px 0;
 }
+.car_model-block.citroen .img_wrap{
+	width: 65px;
+	background-position: -152px 0;
+}
+.car_model-block.daihatsu .img_wrap{
+	width: 90px;
+	background-position: -223px 0;
+}
+.car_model-block.ford .img_wrap{
+	width:110px;
+	background-position: -311px 0;
+}
+.car_model-block.honda .img_wrap{
+	width: 69px;
+	background-position: -424px 0;
+}
+.car_model-block.hyundai .img_wrap{
+	width: 100px;
+	background-position: -497px 0;
+}
+.car_model-block.isuzu .img_wrap{
+	width: 68px;
+	background-position: -596px 0;
+}
+.car_model-block.kia .img_wrap{
+	width: 100px;
+	background-position: -667px 0;
+}
+.car_model-block.lexus .img_wrap{
+	width: 75px;
+	background-position: -769px 0;
+}
+.car_model-block.mazda .img_wrap{
+	width: 73px;
+	background-position: -848px 0;
+}
+.car_model-block.mitsubishi .img_wrap{
+	width: 70px;
+	background-position: -923px 0;
+}
+.car_model-block.nissan .img_wrap{
+	width: 75px;
+	background-position: -997px 0;
+}
+.car_model-block.pegeot .img_wrap{
+	width: 65px;
+	background-position: -1082px 0;
+}
+.car_model-block.subaru .img_wrap{
+	width: 95px;
+	background-position: -1154px 0;
+}
+.car_model-block.suzuki .img_wrap{
+	width: 70px;
+	background-position: -1250px 0;
+}
+.car_model-block.toyota .img_wrap{
+	width: 85px;
+	background-position: -1327px 0;
+}
+.car_model-block.volkswagen .img_wrap{
+	width: 67px;
+	background-position: -1421px 0;
+}
+
 .car_model-block p {
 	margin-top: 25px;
 	font-size: 17px;
@@ -811,6 +956,77 @@ h2.blackbox_title {
 	}
 }
 @media all and (max-width: 1380px) {
+	.car_model-block.audi .img_wrap {
+		width: 67px;
+	}
+	.car_model-block.bmw .img_wrap{
+		width: 51px;
+		background-position: -66px 0;
+	}
+	.car_model-block.citroen .img_wrap{
+		width: 52px;
+		background-position: -116px 0;
+	}
+	.car_model-block.daihatsu .img_wrap{
+		width: 72px;
+		background-position: -169px 0;
+	}
+	.car_model-block.ford .img_wrap{
+		width:85px;
+		background-position: -241px 0;
+	}
+	.car_model-block.honda .img_wrap{
+		width: 55px;
+		background-position: -326px 0;
+	}
+	.car_model-block.hyundai .img_wrap{
+		width: 77px;
+		background-position: -381px 0;
+	}
+	.car_model-block.isuzu .img_wrap{
+		width: 57px;
+		background-position: -458px 0;
+	}
+	.car_model-block.kia .img_wrap{
+		width: 77px;
+		background-position: -514px 0;
+	}
+	.car_model-block.lexus .img_wrap{
+		width: 56px;
+		background-position: -592px 0;
+	}
+	.car_model-block.mazda .img_wrap{
+		width: 59px;
+		background-position: -651px 0;
+	}
+	.car_model-block.mitsubishi .img_wrap{
+		width: 58px;
+		background-position: -709px 0;
+	}
+	.car_model-block.nissan .img_wrap{
+		width: 56px;
+		background-position: -768px 0;
+	}
+	.car_model-block.pegeot .img_wrap{
+		width: 52px;
+		background-position: -830px 0;
+	}
+	.car_model-block.subaru .img_wrap{
+		width: 71px;
+		background-position: -889px 0;
+	}
+	.car_model-block.suzuki .img_wrap{
+		width: 52px;
+		background-position: -964px 0;
+	}
+	.car_model-block.toyota .img_wrap{
+		width: 63px;
+		background-position: -1022px 0;
+	}
+	.car_model-block.volkswagen .img_wrap{
+		width: 50px;
+		background-position: -1092px 0;
+	}
 	h1 {
 		padding: 0 10px;
 	}
@@ -869,6 +1085,77 @@ h2.blackbox_title {
 	}
 }
 @media all and (max-width: 1180px) {
+	.car_model-block.audi .img_wrap {
+		width: 53px;
+	}
+	.car_model-block.bmw .img_wrap{
+		width: 40px;
+		background-position: -53px 0;
+	}
+	.car_model-block.citroen .img_wrap{
+		width:41px;
+		background-position: -93px 0;
+	}
+	.car_model-block.daihatsu .img_wrap{
+		width: 58px;
+		background-position: -134px 0;
+	}
+	.car_model-block.ford .img_wrap{
+		width:68px;
+		background-position: -192px 0;
+	}
+	.car_model-block.honda .img_wrap{
+		width: 43px;
+		background-position: -260px 0;
+	}
+	.car_model-block.hyundai .img_wrap{
+		width: 62px;
+		background-position: -304px 0;
+	}
+	.car_model-block.isuzu .img_wrap{
+		width: 44px;
+		background-position: -366px 0;
+	}
+	.car_model-block.kia .img_wrap{
+		width: 61px;
+		background-position: -411px 0;
+	}
+	.car_model-block.lexus .img_wrap{
+		width: 48px;
+		background-position: -473px 0;
+	}
+	.car_model-block.mazda .img_wrap{
+		width: 44px;
+		background-position: -522px 0;
+	}
+	.car_model-block.mitsubishi .img_wrap{
+		width: 43px;
+		background-position: -567px 0;
+	}
+	.car_model-block.nissan .img_wrap{
+		width: 43px;
+		background-position: -616px 0;
+	}
+	.car_model-block.pegeot .img_wrap{
+		width: 41px;
+		background-position: -665px 0;
+	}
+	.car_model-block.subaru .img_wrap{
+		width: 56px;
+		background-position: -711px 0;
+	}
+	.car_model-block.suzuki .img_wrap{
+		width: 41px;
+		background-position: -771px 0;
+	}
+	.car_model-block.toyota .img_wrap{
+		width: 51px;
+		background-position: -817px 0;
+	}
+	.car_model-block.volkswagen .img_wrap{
+		width:41px;
+		background-position: -873px 0;
+	}
 	.filter_result-wrap {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -1115,9 +1402,15 @@ h2.blackbox_title {
 		grid-template-rows: 160px 160px;
 		height: auto;
 	}
-	.filter__tab-trigger img {
+	.filter__tab-trigger>.img_wrap {
 		display: block;
 		margin-bottom: 10px;
+		width: 56px;
+		height: 56px;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		background-image: url(../img/filter_mobile-sprite.png);
 	}
 	.filter__tab-trigger:nth-child(1) {
 		background-color: #eceff1;
@@ -1138,6 +1431,15 @@ h2.blackbox_title {
 	}
 	.filter__tab-trigger:nth-child(3).active {
 		background-color: #fff;
+	}
+	.filter__tab-trigger:nth-child(1)>.img_wrap {
+		background-position: -60px 0;
+	}
+	.filter__tab-trigger:nth-child(2)>.img_wrap {
+		background-position: 0 0;
+	}
+	.filter__tab-trigger:nth-child(3)>.img_wrap {
+		background-position: -120px 0;
 	}
 	#tabSecondStep1 {
 	    grid-template-columns: repeat(3, 1fr);
@@ -1193,6 +1495,37 @@ h2.blackbox_title {
 	}
 }
 @media all and (max-width: 500px) {
+	.advantages_img-wrap.parts{
+		width: 34px;
+		background-position: -203px 0;
+	}
+	.advantages_img-wrap.packing{
+		width: 36px;
+		background-position: -166px 0;
+	}
+	.advantages_img-wrap.delivery_speed{
+		width: 49px;
+		background-position: -117px 0;
+	}
+	.advantages_img-wrap.safe_packing{
+		width: 38px;
+		background-position: -237px 0;
+	}
+	.advantages_img-wrap.actual_info{
+		width: 38px;
+	}
+	.advantages_img-wrap.client_informing{
+		width: 47px;
+		background-position: -38px 0;
+	}
+	.advantages_img-wrap.wallet{
+		width: 34px;
+		background-position: -275px 0;
+	}
+	.advantages_img-wrap.delivery{
+		width: 32px;
+		background-position: -84px 0;
+	}
 	h1 span {
 		font-size: 19px;
 		line-height: 1.6;
@@ -1286,6 +1619,74 @@ h2.blackbox_title {
 	.autoparsing h2 {
 		font-size: 21px
 	} 
+	.filter_step2-block .img_wrap {
+		height: 60px;
+	}
+	.filter_step2-block.engine .img_wrap {
+	    width: 65px;
+	    background-position: -432px 0;
+	}
+	.filter_step2-block.body .img_wrap {
+	    width: 52px;
+	    background-position: -323px 0;
+	}
+	.filter_step2-block.optics .img_wrap {
+	    width: 72px;
+	    background-position: -775px 0;
+	}
+	.filter_step2-block.suspension .img_wrap {
+	    width: 43px;
+	    background-position: -685px 0;
+	}
+	.filter_step2-block.electric .img_wrap {
+	    width: 59px;
+	    background-position: -1px 0;
+	}
+	.filter_step2-block.accessories .img_wrap {
+	    width: 58px;
+	    background-position: -204px 0;
+	}
+	.filter_step2-block.chemistry .img_wrap {
+	    width: 41px;
+	    background-position: -121px 0;
+	}
+	.filter_step2-block.others .img_wrap {
+	    width: 60px;
+	    background-position: -562px 0;
+	}
+
+	.filter_step2-block.engine:hover .img_wrap {
+	    width: 65px;
+	    background-position: -496px 0;
+	}
+	.filter_step2-block.body:hover .img_wrap {
+	    width: 52px;
+	    background-position: -379px 0;
+	}
+	.filter_step2-block.optics:hover .img_wrap {
+	    width: 72px;
+	    background-position: -849px 0;
+	}
+	.filter_step2-block.suspension:hover .img_wrap {
+	    width: 43px;
+	    background-position: -733px 0;
+	}
+	.filter_step2-block.electric:hover .img_wrap {
+	    width: 59px;
+	    background-position: -61px 0;
+	}
+	.filter_step2-block.accessories:hover .img_wrap {
+	    width: 58px;
+	    background-position: -263px 0;
+	}
+	.filter_step2-block.chemistry:hover .img_wrap {
+	    width: 41px;
+	    background-position: -165px 0;
+	}
+	.filter_step2-block.others:hover .img_wrap {
+	    width: 60px;
+	    background-position: -622px 0;
+	}
 }
 @media all and (max-width: 350px) {
 	h1 span.secondary_title {

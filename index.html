@@ -110,9 +110,9 @@
 			<a href="mailto:info@alfa-kiomi.ru">info@alfa-kiomi.ru</a>
 		</div>
 		<div class="topbar_block">
-			<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
-			<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
-			<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+			<a href="#" class="circle youtube"></a>
+			<a href="#" class="circle vk"></a>
+			<a href="#" class="circle instagram"></a>
 		</div>
  	</div>
 
@@ -137,26 +137,11 @@
  	</div>
 
  	<div class="mobile_bottombar">
- 		<a href="index.html#filterFirstTrigger" class="mobile_bottombar-block">
- 			<img src="img/bottombar-search.png" alt="" class="inactive">
- 			<img src="img/bottombar-search-active.png" alt="" class="active">
- 		</a>
- 		<a href="disassemble.html" class="mobile_bottombar-block">
- 			<img src="img/bottombar-car.png" alt="" class="inactive">
- 			<img src="img/bottombar-car-active.png" alt="" class="active">
- 		</a>
- 		<div class="mobile_bottombar-block">
- 			<img src="img/bottombar-favoriate.png" alt="" class="inactive">
- 			<img src="img/bottombar-favoriate-active.png" alt="" class="active">
- 		</div>
- 		<a href="profile.html" class="mobile_bottombar-block">
- 			<img src="img/bottombar-profile.png" alt="" class="inactive">
- 			<img src="img/bottombar-profile-active.png" alt="" class="active">
- 		</a>
- 		<div class="mobile_bottombar-block phone_trigger">
- 			<img src="img/bottombar-contacts.png" alt="" class="inactive">
- 			<img src="img/bottombar-contacts-active.png" alt="" class="active">
- 		</div>
+ 		<a href="index.html#filterFirstTrigger" class="mobile_bottombar-block search"></a>
+ 		<a href="disassemble.html" class="mobile_bottombar-block disassemble"></a>
+ 		<div class="mobile_bottombar-block favorites"></div>
+ 		<a href="profile.html" class="mobile_bottombar-block profile"></a>
+ 		<div class="mobile_bottombar-block phone_trigger"></div>
  	</div>
  	
  	<div class="popup quick__review">
@@ -295,9 +280,9 @@
 						<a href="https://wa.me/79833149138">+7 (983) 314-91-38</a>
 					</div>
 					<div class="topbar_block">
-						<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
-						<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
-						<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+						<a href="#" class="circle youtube"></a>
+						<a href="#" class="circle vk"></a>
+						<a href="#" class="circle instagram"></a>
 					</div>
 				</div>
 				<div class="topbar_right-wrap">
@@ -375,13 +360,13 @@
   		<div class="filter">
   			<div class="filter__wrap-header">
 				<div class="filter__tab-trigger active" id="filterFirstTrigger">
-					<img src="img/icon_search-make.png" alt="">
+					<div class="img_wrap"></div>
 				Поиск <br>по модели авто</div>
 				<div class="filter__tab-trigger " id="filterSecondTrigger">
-					<img src="img/icon_search-catalog.png" alt="">
+					<div class="img_wrap"></div>
 				Поиск <br>по каталогу</div>
 				<div class="filter__tab-trigger" id="filterThirdTrigger">
-					<img src="img/icon_search-VIN.png" alt="">
+					<div class="img_wrap"></div>
 				Поиск по VIN \ FRAME</div>
 			</div>
 			<div class="filter_wrap">
@@ -481,12 +466,8 @@
   						</form>
   						<div class="filter_result-view">
   							<div class="view_trigger-button active" id="tileViewFilter">
-  								<img src="img/icon-tiles.png" alt="" class="inactive">
-  								<img src="img/icon-tiles_active.png" alt="" class="active">
   							</div>
   							<div class="view_trigger-button " id="rowViewFilter">
-  								<img src="img/icon-row.png" alt="" class="inactive">
-  								<img src="img/icon-row_active.png" alt="" class="active">
   							</div>
   						</div>
   						<div class="filter_result-wrap ">
@@ -718,59 +699,43 @@
   					<div class="filter__tab filter__tab-second " id="filterSecond">
   						<div class="container">
   							<div class="filter_step2-wrap active" id="tabSecondStep1">
-  								<div class="filter_step2-block" data-value="ДВС">
+  								<div class="filter_step2-block engine" data-value="ДВС">
   									<div class="img_wrap">
-  										<img src="img/filter_step2-engineactive.png" alt="" class="active">
-  										<img src="img/filter_step2-engine.png" alt="" class="inactive">
   									</div>
   									<p>ДВС</p>
   								</div>
-  								<div class="filter_step2-block" data-value="Кузов">
+  								<div class="filter_step2-block body" data-value="Кузов">
   									<div class="img_wrap">
-  										<img src="img/filter_step2-doorsactive.png" alt="" class="active">
-  										<img src="img/filter_step2-doors.png" alt="" class="inactive">
   									</div>
   									<p>Кузов</p>
   								</div>
-  								<div class="filter_step2-block" data-value="Оптика">
+  								<div class="filter_step2-block optics" data-value="Оптика">
   									<div class="img_wrap">
-  										<img src="img/filter_step2-opticactive.png" alt="" class="active">
-  										<img src="img/filter_step2-optic.png" alt="" class="inactive">
   									</div>
   									<p>Оптика</p>
   								</div>
-  								<div class="filter_step2-block" data-value="Подвеска">
+  								<div class="filter_step2-block suspension" data-value="Подвеска">
   									<div class="img_wrap">
-  										<img src="img/filter_step2-gsprungactie.png" alt="" class="active">
-  										<img src="img/filter_step2-gsprung.png" alt="" class="inactive">
   									</div>
   									<p>Подвеска</p>
   								</div>
-  								<div class="filter_step2-block" data-value="Электрика">
+  								<div class="filter_step2-block electric" data-value="Электрика">
   									<div class="img_wrap">
-  										<img src="img/filter_step2-batteyactive.png" alt="" class="active">
-  										<img src="img/filter_step2-battery.png" alt="" class="inactive">
   									</div>
   									<p>Электрика</p>
   								</div>
-  								<div class="filter_step2-block" data-value="Аксессуары">
+  								<div class="filter_step2-block accessories" data-value="Аксессуары">
   									<div class="img_wrap">
-  										<img src="img/filter_step2-cleanersactive.png" alt="" class="active">
-  										<img src="img/filter_step2-cleaners.png" alt="" class="inactive">
   									</div>
   									<p>Аксессуары</p>
   								</div>
-  								<div class="filter_step2-block" data-value="Автохимия">
+  								<div class="filter_step2-block chemistry" data-value="Автохимия">
   									<div class="img_wrap">
-  										<img src="img/filter_step2-canactive.png" alt="" class="active">
-  										<img src="img/filter_step2-can.png" alt="" class="inactive">
   									</div>
   									<p>Автохимия</p>
   								</div>
-  								<div class="filter_step2-block" data-value="Прочее">
+  								<div class="filter_step2-block others" data-value="Прочее">
   									<div class="img_wrap">
-  										<img src="img/filter_step2-gearsactive.png" alt="" class="active">
-  										<img src="img/filter_step2-gears.png" alt="" class="inactive">
   									</div>
   									<p>Прочее</p>
   								</div>
@@ -896,77 +861,77 @@
   									<li>Щуп уровня масла двигателя</li>
   								</ul>
   							</div>
-  							<div class="filter_step2-wrap" id="tabSecondStep3">
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/audi.png" alt=""></div>
+  							<div class="filter_step2-wrap " id="tabSecondStep3">
+  								<div class="car_model-block audi">
+  									<div class="img_wrap"></div>
   									<p>Audi</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/bmw.png" alt=""></div>
+  								<div class="car_model-block bmw">
+  									<div class="img_wrap"></div>
   									<p>BMW</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/citroe.png" alt=""></div>
+  								<div class="car_model-block citroen">
+  									<div class="img_wrap"></div>
   									<p>Citroen</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/daihatsu.png" alt=""></div>
+  								<div class="car_model-block daihatsu">
+  									<div class="img_wrap"></div>
   									<p>Daihatsu</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/frod.png" alt=""></div>
+  								<div class="car_model-block ford">
+  									<div class="img_wrap"></div>
   									<p>Ford</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/honda.png" alt=""></div>
+  								<div class="car_model-block honda">
+  									<div class="img_wrap"></div>
   									<p>Honda</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/hyundai.png" alt=""></div>
+  								<div class="car_model-block hyundai">
+  									<div class="img_wrap"></div>
   									<p>Hyundai</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/isuzu.png" alt=""></div>
+  								<div class="car_model-block isuzu">
+  									<div class="img_wrap"></div>
   									<p>Isuzu</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/kia.png" alt=""></div>
+  								<div class="car_model-block kia">
+  									<div class="img_wrap"></div>
   									<p>KIA</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/lexus.png" alt=""></div>
+  								<div class="car_model-block lexus">
+  									<div class="img_wrap"></div>
   									<p>Lexus</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/mazda.png" alt=""></div>
+  								<div class="car_model-block mazda">
+  									<div class="img_wrap"></div>
   									<p>Mazda</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/mitsuishi.png" alt=""></div>
+  								<div class="car_model-block mitsubishi">
+  									<div class="img_wrap"></div>
   									<p>Mitsubishi</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/nissan.png" alt=""></div>
+  								<div class="car_model-block nissan">
+  									<div class="img_wrap"></div>
   									<p>Nissan</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/pegeot.png" alt=""></div>
+  								<div class="car_model-block pegeot">
+  									<div class="img_wrap"></div>
   									<p>Pegeot</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/subaru.png" alt=""></div>
+  								<div class="car_model-block subaru">
+  									<div class="img_wrap"></div>
   									<p>Subaru</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/suzuki.png" alt=""></div>
+  								<div class="car_model-block suzuki">
+  									<div class="img_wrap"></div>
   									<p>Suzuki</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/toyota.png" alt=""></div>
+  								<div class="car_model-block toyota">
+  									<div class="img_wrap"></div>
   									<p>Toyota</p>
   								</div>
-  								<div class="car_model-block">
-  									<div class="img_wrap"><img src="img/volkswagen.png" alt=""></div>
+  								<div class="car_model-block volkswagen">
+  									<div class="img_wrap"></div>
   									<p>Volkswagen</p>
   								</div>
   							</div>
@@ -1021,45 +986,45 @@
   				<h2>8 ПРЕИМУЩЕСТВ РАБОТЫ С ALFA-KIOMI</h2>
   				<div class="advantages_wrap">
   					<div class="advantages_block">
-  						<div class="advantages_img-wrap"><img src="img/icon-parts.png" alt=""></div>
+  						<div class="advantages_img-wrap parts"></div>
   						<div class="advantages_block-title">Качество запчастей</div>
   						<p>Все запчасти, представленные в нашем интернет-магазине, являются контрактными. Все автомобили ведущих производителей: Toyota , Nissan, Mazda, Honda, Mitsubishi, Isuzu, Subaru, Suzuki покупаются в Японии только на аукционе, и только в исправном состоянии...</p>
   						<a href="#">Читать полностью <img src="img/icon-caret_red.png" alt=""></a>
   					</div>
   					<div class="advantages_block">
-  						<div class="advantages_img-wrap"><img src="img/icon-packing.png" alt=""></div>
+  						<div class="advantages_img-wrap packing"></div>
   						<div class="advantages_block-title">Упаковка и доставки до ТК</div>
   						<p>При отправке запчастей в регионы на любой заказ распространяется бесплатная услуга по упаковке и доставке груза до транспортной компании. Это не влияет на качество самой упаковки и скорость отправки заказа. Всё будет выполнено качественно и быстро</p>
   					</div>
   					<div class="advantages_block">
-  						<div class="advantages_img-wrap"><img src="img/icon-delivery_speed.png" alt=""></div>
+  						<div class="advantages_img-wrap delivery_speed"></div>
   						<div class="advantages_block-title">Скорость отправки</div>
   						<p>Отправка оплаченного заказа осуществляется на следующий рабочий день, либо в тот же день если вы успели оплатить заказ до 06:00 по Московскому времени. Исключением являются те транспортные компании, отправка которыми осуществляется только по четвергам (Почтовая Лига)</p>
   					</div>
   					<div class="advantages_block">
-  						<div class="advantages_img-wrap"><img src="img/icon-safe_packing.png" alt=""></div>
+  						<div class="advantages_img-wrap safe_packing"></div>
   						<div class="advantages_block-title">Бережная упаковка</div>
   						<p>Все наши многочисленные клиенты уже давно положительно отзываются о качестве нашей упаковки. Мы точно так же как и покупатель заинтересованы, чтобы заказ дошел до покупателя в целости и сохранности. Поэтому все легкие и хрупкие запчасти упаковываются в воздушно-пузырьковую пленку и гофротару...</p>
   						<a href="#">Читать полностью <img src="img/icon-caret_red.png" alt=""></a>
   					</div>
   					<div class="advantages_block">
-  						<div class="advantages_img-wrap"><img src="img/icon-actual_info.png" alt=""></div>
+  						<div class="advantages_img-wrap actual_info"></div>
   						<div class="advantages_block-title">Актуальность информации</div>
   						<p>Сайт синхронизирован с нашей товаро-учетной программой в реальном времени. Поэтому все, что представлено на сайте – есть в наличии, и данные запчасти можно купить прямо сейчас</p>
   					</div>
   					<div class="advantages_block">
-  						<div class="advantages_img-wrap"><img src="img/icon-client_informing.png" alt=""></div>
+  						<div class="advantages_img-wrap client_informing"></div>
   						<div class="advantages_block-title">Информирование клиента</div>
   						<p>После оплаты заказа все уведомления об изменениях статуса заказа наши покупатели в оперативном режиме получают на свою электронную почту (регистрация на сайте для этого не требуется). На следующий рабочий день после сдачи груза в транспортную компанию...</p>
   						<a href="#">Читать полностью <img src="img/icon-caret_red.png" alt=""></a>
   					</div>
   					<div class="advantages_block">
-  						<div class="advantages_img-wrap"><img src="img/icon-wallet.png" alt=""></div>
+  						<div class="advantages_img-wrap wallet"></div>
   						<div class="advantages_block-title">Безопасность платежей</div>
   						<p>Услугу интернет-эквайринга нашему интернет-магазину предоставляет ЮMoney. Сервис ЮMoney работает по международному стандарту безопасности — Payment Card Industry Data Security Standard (сокращенно PCI DSS). Этот стандарт разработан платежными системами Visa и MasterCard, включает 12 требований по защите данных</p>
   					</div>
   					<div class="advantages_block">
-  						<div class="advantages_img-wrap"><img src="img/icon-delivery.png" alt=""></div>
+  						<div class="advantages_img-wrap delivery"></div>
   						<div class="advantages_block-title">Доставка по Новосибирску</div>
   						<p>Оформление доставки и её оплата осуществляется только через наш интернет-магазин. Данный способ доставки активен при оформлении заказа в рабочие часы нашего магазина. Услугу необходимо выбрать в Корзине при оформлении заказа. Укажите указать точный адрес доставки. <a href="#">Подробнее о доставке</a></p>
   					</div>
@@ -1423,22 +1388,22 @@
 	  						<img src="img/icon-drom.png" alt="">
 	  						<span>Мы на Drom.ru</span>
 	  					</a>
-	  					<a href="#" class="circle"><img src="img/icon-vk.png" alt=""></a>
-						<a href="#" class="circle"><img src="img/icon-youtube.png" alt=""></a>
-						<a href="#" class="circle"><img src="img/icon-instagram.png" alt=""></a>
+	  					<a href="#" class="circle"></a>
+						<a href="#" class="circle"></a>
+						<a href="#" class="circle"></a>
 	  				</div>
 	  				<div class="footer_block-title">способы оплаты</div>
 	  				<div class="foter_payments-wrap">
-	  					<img src="img/icon-visa.png" alt="">
-	  					<img src="img/icon-mastercard.png" alt="">
-	  					<img src="img/icon-maestro.png" alt="">
-	  					<img src="img/icon-mir.png" alt="">
-	  					<img src="img/icon-jcb.png" alt="">
-	  					<img src="img/icon-webmoney.png" alt="">
-	  					<img src="img/icon-qiwi.png" alt="">
-	  					<img src="img/icon-sberbank.png" alt="">
-	  					<img src="img/icon-alfa.png" alt="">
-	  					<img src="img/icon-youmoney.png" alt="">
+	  					<div class="img_wrap visa"></div>
+	  					<div class="img_wrap mastercard"></div>
+	  					<div class="img_wrap maestro"></div>
+	  					<div class="img_wrap mir"></div>
+	  					<div class="img_wrap jcb"></div>
+	  					<div class="img_wrap webmoney"></div>
+	  					<div class="img_wrap qiwi"></div>
+	  					<div class="img_wrap sberbank"></div>
+	  					<div class="img_wrap alfa"></div>
+	  					<div class="img_wrap yoomoney"></div>
 	  				</div>
 	  			</div>
   			</div>
