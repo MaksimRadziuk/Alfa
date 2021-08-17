@@ -36,7 +36,7 @@ $(document).ready(function(){
 		$('.popup').fadeOut("fast");
 	})
 
-	$('.enter_lobby, .topbar_block img').click(function(){
+	$('.enter_lobby, .topbar_icon-wrap.lock').click(function(){
 		$('#background').fadeIn("fast");
 		$('.popup.access').fadeIn("slow");
 	})

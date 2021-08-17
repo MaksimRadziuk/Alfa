@@ -1089,7 +1089,58 @@ footer .madeBy_wrap a {
 	display: none;
 }
 
+.topbar_icon-wrap {
+	height: 27px;
+	margin-right: 15px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-image: url(../img/icons-sprite.png);
+}
+.mobile_header .topbar_icon-wrap {
+	margin-right: 0;
+}
+.mobile_header .topbar_icon-wrap.cart {
+	margin-right: 10px;
+}
+.topbar_icon-wrap.phonetrigger {
+	width: 23px;
+	background-position: -123px 0;
+}
+.topbar_icon-wrap.cart{
+	width: 30px;
+	background-position: 0 0;
+}
+.topbar_icon-wrap.lock{
+	width: 14px;
+	background-position: -32px 0;
+}
+.topbar_icon-wrap.mapmark{
+	width: 14px;
+	background-position: -70px 0;
+}
+.topbar_icon-wrap.email{
+	width: 17px;
+	background-position: -50px 0;
+}
+.topbar_icon-wrap.phone{
+	width: 14px;
+	background-position: -87px 0;
+}
+.topbar_icon-wrap.whatsapp{
+	width: 16px;
+	background-position: -104px 0;
+}
 
+.caret_sprite {
+	width: 8px;
+	height: 5px;
+	margin-left: 10px;
+	background-position: -9px 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/caret_sprite.png)
+}
 
 @media all and (max-width: 1780px) {
 	.quick__review {
@@ -1167,6 +1218,7 @@ footer .madeBy_wrap a {
 		height: 50px;
 		padding: 0 10px;
 	}
+
 	header .topbar, header .navbar {
 		display: none;
 	}
