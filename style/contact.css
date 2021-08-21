@@ -37,21 +37,34 @@ h1 {
 .contact_info-wrap .img_wrap {
 	position: absolute;
 	left: 0;
-	top: 2px;
+	top: 0px;
+	height: 27px;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-image: url(../img/icons-sprite.png);
+	display: block;
+}
+.contact_info-wrap a.phone .img_wrap {
+	width: 15px;
+	background-position: -86px 0;
+}
+.contact_info-wrap p.address .img_wrap {
+	width: 15px;
+	background-position: -70px 0;
+}
+.contact_info-wrap a.email .img_wrap {
+	width: 18px;
+	background-position: -49px 0;
+}
+.contact_info-wrap p.row_icon .img_wrap {
 	width: 20px;
-	height: 20px;
+	background-position: -171px 0;
 }
-.contact_info-wrap .img_wrap.width_fit {
-	top: 5px;
+.contact_info-wrap p.coins .img_wrap {
+	width: 22px;
+	background-position: -149px 0;
 }
-.contact_info-wrap .img_wrap>img {
-	width: auto;
-	height: 100%;
-}
-.contact_info-wrap .img_wrap.width_fit>img {
-	height: auto;
-	width: 100%;
-}
+
 p.title {
 	font-size: 23px;
 	font-weight: 600;
@@ -145,8 +158,7 @@ p.red, a.red {
 		margin-bottom: 20px;
 	}
 	.contact_info-wrap .img_wrap {
-		width: 15px;
-		height: 15px;	
+		height: 20px;	
 	}
 	.map_wrap {
 		margin-bottom: 50px;
@@ -155,5 +167,25 @@ p.red, a.red {
 	}
 	.contact_info-wrap {
 		margin-bottom: 20px
+	}
+	.contact_info-wrap a.phone .img_wrap {
+		width: 14px;
+		background-position: -62px 0;
+	}
+	.contact_info-wrap p.address .img_wrap {
+		width: 13px;
+		background-position: -50px 0;
+	}
+	.contact_info-wrap a.email .img_wrap {
+		width: 15px;
+		background-position: -36px 0;
+	}
+	.contact_info-wrap p.row_icon .img_wrap {
+		width: 15px;
+		background-position: -127px 0;
+	}
+	.contact_info-wrap p.coins .img_wrap {
+		width: 17px;
+		background-position: -109px 0;
 	}
 }
