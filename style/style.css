@@ -416,7 +416,7 @@ a {
 }
 .cookieBar p {
 	font-size: 17px;
-
+	padding-right: 20px;
 }
 .cookieBar button {
 	width: 235px;
@@ -1152,6 +1152,13 @@ footer .madeBy_wrap a {
 		-ms-grid-columns: 1fr 200px 200px 1fr;
 		grid-template-columns: 1fr 200px 200px 1fr;
 	}
+	.cookieBar button {
+		margin-right: 50px;
+		min-width: 220px;
+	}
+	.cookieBar .close {
+		top: 10px
+	}
 }
 @media all and (max-width: 1280px) {
 	a.logo-wrap	{
@@ -1489,6 +1496,15 @@ footer .madeBy_wrap a {
 	footer .madeBy_wrap a {
 		margin-bottom: 0
 	}
+	.cookieBar button {
+		width: 170px;
+		min-width: 170px;
+		font-size: 16px;
+		margin-right: 35px
+	}
+	.cookieBar p {
+		font-size: 16px
+	}
 }
 @media all and (max-width: 600px) {
 	footer .top_part .container {
@@ -1515,6 +1531,22 @@ footer .madeBy_wrap a {
 	}
 	.footer_soial-wrap {
 		margin-bottom: 25px;
+	}
+	.cookieBar .container {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		padding: 20px 0;
+	}
+	.cookieBar button {
+		margin: 20px 0 0 0;
+		height: 30px;
+	}
+	.cookieBar p {
+		padding-right: 35px
+	}
+	.cookieBar {
+		height: auto;
 	}
 }
 @media all and (max-width: 500px) {
