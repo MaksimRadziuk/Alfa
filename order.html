@@ -425,7 +425,7 @@
 	  				</div>
 	  			</div>
 	  			<div class="process_content-wrap">
-	  				<div class="process_step active" id="byuerData">
+	  				<div class="process_step " id="byuerData">
 	  					<div class="registration_radio-wrap">
 			 				<div class="input_wrap">
 			 					<input type="radio" id="byuerDataIndvidual" name="byuerDataEntity">
@@ -502,7 +502,7 @@
 	  						<button class="next" id="deliveryOptionSend">Далее</button>
 	  					</div>
 	  				</div>
-	  				<div class="process_step " id="paymentOption">
+	  				<div class="process_step active" id="paymentOption">
 	  					<h2>Способы оплаты</h2>
 	  					<div class="step_content-wrap">
 	  						<div class="wrap">
@@ -511,12 +511,44 @@
 		  							<label for="bankCard"> Банковской картой (Visa, Mastercard, Maestro, Мир, JCB)</label>
 		  						</div>
 		  						<div class="step_radio-wrap">
-		  							<input type="radio" name="paymentOption" id="webMoney">
-		  							<label for="webMoney">Электронные деньги</label>
+		  							<input type="radio" name="paymentOption" id="emoney">
+		  							<label for="emoney">Электронные деньги</label>
+		  						</div>
+		  						<div class="step_radio-details">
+		  							<div class="step_radio-detailswrap">
+		  								<div class="detailswrap_radio-wrap">
+			  								<input type="radio" name="detailsEmoneyOption" id="detailsYomoney">
+			  								<label for="detailsYomoney" class="shadow"></label>
+			  							</div>
+			  							<div class="detailswrap_radio-wrap">
+			  								<input type="radio" name="detailsEmoneyOption" id="detailsWebmoney">
+			  								<label for="detailsWebmoney" class="pale"></label>
+			  							</div>
+			  							<div class="detailswrap_radio-wrap">
+			  								<input type="radio" name="detailsEmoneyOption" id="detailsQiwi">
+			  								<label for="detailsQiwi" class="text"><span>QIWI</span></label>
+			  							</div>
+		  							</div>
 		  						</div>
 		  						<div class="step_radio-wrap">
 		  							<input type="radio" name="paymentOption" id="inernetBanking">
 		  							<label for="inernetBanking">Интернет-банкинг</label>
+		  						</div>
+		  						<div class="step_radio-details">
+		  							<div class="step_radio-detailswrap">
+		  								<div class="detailswrap_radio-wrap">
+			  								<input type="radio" name="detailsEbankOption" id="detailsSber">
+			  								<label for="detailsSber"></label>
+			  							</div>
+			  							<div class="detailswrap_radio-wrap">
+			  								<input type="radio" name="detailsEbankOption" id="detailsAlfa">
+			  								<label for="detailsAlfa"></label>
+			  							</div>
+			  							<div class="detailswrap_radio-wrap">
+			  								<input type="radio" name="detailsEbankOption" id="detailsTinkoff">
+			  								<label for="detailsTinkoff"></label>
+			  							</div>
+		  							</div>
 		  						</div>
 	  						</div>
 	  						<div class="select_wrap">
@@ -665,9 +697,9 @@
 	  						<img src="img/icon-drom.png" alt="">
 	  						<span>Мы на Drom.ru</span>
 	  					</a>
-	  					<a href="#" class="circle"></a>
-						<a href="#" class="circle"></a>
-						<a href="#" class="circle"></a>
+	  					<a href="#" class="circle youtube"></a>
+						<a href="#" class="circle vk"></a>
+						<a href="#" class="circle instagram"></a>
 	  				</div>
 	  				<div class="footer_block-title">способы оплаты</div>
 	  				<div class="foter_payments-wrap">
@@ -705,6 +737,7 @@
   crossorigin="anonymous"></script>
 	<script src="lib/slick/slick.js"></script>
 	<script src="lib/jquery.maskedinput/jquery.maskedinput.js"></script>
+	<script src="lib/select2/js/select2.min.js"></script>
 	<script src="lib/ResponsiveImageGallery/js/jquery.easing.1.3.js"></script>
 	<script src="lib/ResponsiveImageGallery/js/jquery.tmpl.min.js"></script>
 	<script src="lib/ResponsiveImageGallery/js/jquery.elastislide.js"></script>

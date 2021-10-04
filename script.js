@@ -455,6 +455,18 @@ $(document).ready(function(){
 	})
 
 
+	$('label[for="inernetBanking"]').click(function(){
+		$('#emoney').parent('.step_radio-wrap').next('.step_radio-details').slideUp(200);
+		$('#inernetBanking').parent('.step_radio-wrap').next('.step_radio-details').slideDown(400);
+		$('input[name="detailsEmoneyOption"]').prop('checked', false);
+	})
+	$('label[for="emoney"]').click(function(){
+		$('#inernetBanking').parent('.step_radio-wrap').next('.step_radio-details').slideUp(200);
+		$('#emoney').parent('.step_radio-wrap').next('.step_radio-details').slideDown(400);
+		$('input[name="detailsEbankOption"]').prop('checked', false);
+	})
+
+
 
 	$('.js-example-basic-single').select2({width: 'resolve'});
 
