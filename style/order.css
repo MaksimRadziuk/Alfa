@@ -504,38 +504,15 @@ p.notification {
 }
 
 .detailswrap_radio-wrap>label[for=detailsSber] {
-	background-position: -692px 0;
-	width: 108px;
-	background-image: url(../img/footer_payments-sprite.png);
-	border-radius: 0;
-	overflow: visible;
+	background-position: -140px 0;
 }
-.detailswrap_radio-wrap>label[for=detailsSber]:before {
-	content: '';
-	display: block;
-	position: absolute;
-	left: -30px;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 20px;
-	height: 20px;
-	border: 1px solid #e2e5e8;
-	border-radius: 50%;
-}
-.detailswrap_radio-wrap>input:checked ~ label[for=detailsSber] {
-	box-shadow: none;
-}
-.detailswrap_radio-wrap>input:checked ~ label[for=detailsSber]:before {
-	background-image: url(../img/checked_radio.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
-}
+
 .detailswrap_radio-wrap>label[for=detailsAlfa] {
 	background-position: -185px 0;
 }
 .detailswrap_radio-wrap>label[for=detailsTinkoff] {
 	background-position: -233px 0;
+	background-color: #fedd2c;
 }
 
 
