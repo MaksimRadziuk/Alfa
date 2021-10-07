@@ -518,21 +518,20 @@ header {
 	margin-right: 20px;
 }
 a.circle {
-	width: 25px;
-	height: 25px;
+	width: 26px;
+	min-width: 26px;
+	height: 26px;
 	border: 2px solid var(--red-color);
 	border-radius: 50%;
-	background-image: url(../img/social_icons-sprite.png);
-	background-repeat: no-repeat;
-	background-size: auto 100%;
-	background-position: 0 0;
 	padding: 0;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
-a.circle.vk {
-	background-position:-21px 0 ;
-}
-a.circle.instagram {
-	background-position:-42px 0 ;
+a.circle>i {
+	font-size: 13px;
+	color: var(--red-color);
+	margin-top: 5px;
 }
 
 
@@ -840,20 +839,13 @@ footer .top_part .container {
 	margin-right: 60px;
 }
 .footer_soial-wrap a.circle {
-	width: 25px;
-	height: 25px;
-	border: 2px solid var(--red-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
 	margin-right: 20px;
 }
 .footer_soial-wrap a.circle:last-child {
 	margin-right: 0;
 }
-.footer_soial-wrap a.circle img {
-	margin: 0;
+.footer_soial-wrap a.circle>i {
+	margin-right: 2px;
 }
 .foter_payments-wrap .img_wrap {
 	display: inline-block;
