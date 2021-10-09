@@ -662,23 +662,23 @@ h2.blackbox_title {
 	background-repeat: no-repeat;
 	background-image: url(../img/step2_filter-sprite.png);
 }
-.filter_step2-block.engine .img_wrap{
+.filter_step2-block.dvs .img_wrap{
 	width: 85px;
 	background-position: -591px 0;
 }
-.filter_step2-block.body .img_wrap{
+.filter_step2-block.kuzov .img_wrap{
 	width: 70px;
 	background-position: -443px 0;
 }
-.filter_step2-block.optics .img_wrap{
+.filter_step2-block.optika .img_wrap{
 	width: 97px;
 	background-position: -1060px 0;
 }
-.filter_step2-block.suspension .img_wrap{
+.filter_step2-block.podveska .img_wrap{
 	width: 57px;
 	background-position: -936px 0;
 }
-.filter_step2-block.electric .img_wrap{
+.filter_step2-block.elektrika .img_wrap{
 	width: 77px;
 	background-position: -3px 0;
 }
@@ -686,7 +686,7 @@ h2.blackbox_title {
 	width: 78px;
 	background-position: -279px 0;
 }
-.filter_step2-block.chemistry .img_wrap{
+.filter_step2-block.auto-chemistry .img_wrap{
 	width: 54px;
 	background-position: -167px 0;
 }
@@ -695,25 +695,25 @@ h2.blackbox_title {
 	background-position: -768px 0;
 }
 
-.filter_step2-block.engine:hover .img_wrap{
+.filter_step2-block.dvs:hover .img_wrap{
 	background-position: -680px 0;
 }
-.filter_step2-block.body:hover .img_wrap{
+.filter_step2-block.kuzov:hover .img_wrap{
 	background-position: -519px 0;
 }
-.filter_step2-block.optics:hover .img_wrap{
+.filter_step2-block.optika:hover .img_wrap{
 	background-position: -1162px 0;
 }
-.filter_step2-block.suspension:hover .img_wrap{
+.filter_step2-block.podveska:hover .img_wrap{
 	background-position: -1000px 0;
 }
-.filter_step2-block.electric:hover .img_wrap{
+.filter_step2-block.elektrika:hover .img_wrap{
 	background-position: -84px 0;
 }
 .filter_step2-block.accessories:hover .img_wrap{
 	background-position: -357px 0;
 }
-.filter_step2-block.chemistry:hover .img_wrap{
+.filter_step2-block.auto-chemistry:hover .img_wrap{
 	background-position: -226px 0;
 }
 .filter_step2-block.others:hover .img_wrap{
@@ -1622,23 +1622,23 @@ h2.blackbox_title {
 	.filter_step2-block .img_wrap {
 		height: 60px;
 	}
-	.filter_step2-block.engine .img_wrap {
+	.filter_step2-block.dvs .img_wrap {
 	    width: 65px;
 	    background-position: -432px 0;
 	}
-	.filter_step2-block.body .img_wrap {
+	.filter_step2-block.kuzov .img_wrap {
 	    width: 52px;
 	    background-position: -323px 0;
 	}
-	.filter_step2-block.optics .img_wrap {
+	.filter_step2-block.optika .img_wrap {
 	    width: 72px;
 	    background-position: -775px 0;
 	}
-	.filter_step2-block.suspension .img_wrap {
+	.filter_step2-block.podveska .img_wrap {
 	    width: 43px;
 	    background-position: -685px 0;
 	}
-	.filter_step2-block.electric .img_wrap {
+	.filter_step2-block.elektrika .img_wrap {
 	    width: 59px;
 	    background-position: -1px 0;
 	}
@@ -1646,7 +1646,7 @@ h2.blackbox_title {
 	    width: 58px;
 	    background-position: -204px 0;
 	}
-	.filter_step2-block.chemistry .img_wrap {
+	.filter_step2-block.auto-chemistry .img_wrap {
 	    width: 41px;
 	    background-position: -121px 0;
 	}
@@ -1655,23 +1655,23 @@ h2.blackbox_title {
 	    background-position: -562px 0;
 	}
 
-	.filter_step2-block.engine:hover .img_wrap {
+	.filter_step2-block.dvs:hover .img_wrap {
 	    width: 65px;
 	    background-position: -496px 0;
 	}
-	.filter_step2-block.body:hover .img_wrap {
+	.filter_step2-block.kuzov:hover .img_wrap {
 	    width: 52px;
 	    background-position: -379px 0;
 	}
-	.filter_step2-block.optics:hover .img_wrap {
+	.filter_step2-block.optika:hover .img_wrap {
 	    width: 72px;
 	    background-position: -849px 0;
 	}
-	.filter_step2-block.suspension:hover .img_wrap {
+	.filter_step2-block.podveska:hover .img_wrap {
 	    width: 43px;
 	    background-position: -733px 0;
 	}
-	.filter_step2-block.electric:hover .img_wrap {
+	.filter_step2-block.elektrika:hover .img_wrap {
 	    width: 59px;
 	    background-position: -61px 0;
 	}
@@ -1679,7 +1679,7 @@ h2.blackbox_title {
 	    width: 58px;
 	    background-position: -263px 0;
 	}
-	.filter_step2-block.chemistry:hover .img_wrap {
+	.filter_step2-block.auto-chemistry:hover .img_wrap {
 	    width: 41px;
 	    background-position: -165px 0;
 	}
