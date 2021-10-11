@@ -251,12 +251,14 @@ h1 span.secondary_title {
 .result_block-info p.title {
 	font-size: 19px;
 	font-weight: 600;
+	height: auto;
 }
 .result_block-info p {
 	margin-bottom: 15px;
 	font-size: 17px;
 	font-weight: 100;
 	margin-bottom: 15px;
+	max-height: 40px;
 	height: 40px;
 	overflow-y: hidden;
 }
@@ -267,11 +269,13 @@ h1 span.secondary_title {
 .rows .result_block-info p.avaliability {
 	margin-top: 25px;
 	margin-bottom: 10px;
+	height: auto;
 }
 
 .result_block-info p.subtitle {
 	margin-top: 10px;
 	margin-bottom: 0;
+	height: auto;
 }
 .result_block-info p.subtitle>span {
 	color: #a8aeb2;
@@ -284,6 +288,7 @@ h1 span.secondary_title {
 }
 .result_block-info p.engine_info {
 	display: none;
+	height: auto;
 }
 .rows .result_block-info p.engine_info {
 	display: block;

@@ -555,12 +555,14 @@ button.showMore {
 .result_block-info p.title {
 	font-size: 19px;
 	font-weight: 600;
+	height: auto;
 }
 .result_block-info p {
 	margin-bottom: 15px;
 	font-size: 17px;
 	font-weight: 100;
 	margin-bottom: 15px;
+	max-height: 40px;
 	height: 40px;
 	overflow-y: hidden;
 }
@@ -571,11 +573,13 @@ button.showMore {
 .rows .result_block-info p.avaliability {
 	margin-top: 25px;
 	margin-bottom: 10px;
+	height: auto;
 }
 
 .result_block-info p.subtitle {
 	margin-top: 10px;
 	margin-bottom: 0;
+	height: auto;
 }
 .result_block-info p.subtitle>span {
 	color: #a8aeb2;
@@ -585,9 +589,11 @@ button.showMore {
 	color: #a8aeb2;
 	font-size: 15px;
 	margin-top: 0;
+	height: auto;
 }
 .result_block-info p.engine_info {
 	display: none;
+	height: auto;
 }
 .rows .result_block-info p.engine_info {
 	display: block;
