@@ -738,14 +738,20 @@ h2.blackbox_title {
 	align-items: flex-end;
 	justify-content: flex-start;
 	margin-bottom: 30px;
-	pointer-events: none;
 }
-.filter_step2-wrap .beradcrumbs p{
+.filter_step2-wrap .beradcrumbs a{
 	font-size: 13px;
 	color: #a8aeb2;
 }
+.filter_step2-wrap .beradcrumbs a:hover {
+	color: var(--red-color);
+}
 .filter_step2-wrap .beradcrumbs .arrow {
 	margin: 0 15px;
+	pointer-events: none;
+}
+.filter_step2-wrap .beradcrumbs a:last-child {
+	pointer-events: none;
 }
 #tabSecondStep2 ul{
 	display: grid;
