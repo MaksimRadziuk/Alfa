@@ -400,6 +400,7 @@ button.addtoBusket {
 	width: 215px;
 	height: 185px;
 	margin-right: 45px;
+	display: block;
 }
 .donor_image-wrap img{
 	width: 100%;
@@ -410,6 +411,7 @@ button.addtoBusket {
 	font-size: 19px;
 	font-weight: 600;
 	margin-bottom: 30px;
+	display: block;
 }
 .donor_info-row {
 	display: grid;

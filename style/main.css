@@ -248,13 +248,14 @@ h1 span.secondary_title {
 	padding: 0;
 	padding-left: 40px;
 }
-.result_block-info p.title {
+.result_block-info a.title {
 	font-size: 19px;
 	font-weight: 600;
 	height: auto;
+	margin-bottom: 15px;
+	display: block;
 }
 .result_block-info p {
-	margin-bottom: 15px;
 	font-size: 17px;
 	font-weight: 100;
 	margin-bottom: 15px;
