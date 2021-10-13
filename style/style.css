@@ -3,6 +3,7 @@
 	--grey-color: #eceff1;
 	--lightgrey-color: #f1f4f6;
 	--red-color: #c21d07;
+	--green-color: #498b13;
 }
 * {
 	margin: 0;
@@ -111,6 +112,52 @@ a {
 }
 .up:hover {
 	opacity: 1;
+}
+
+button.addToBasket {
+	width: 145px;
+	height: 40px;
+	overflow: hidden;
+}
+button.addToBasket.added {
+	animation: shine 0.8s ease;
+}
+button.addToBasket>span{
+	font-size: 17px;
+	color: #fff;
+	animation: blink 0.2s ease;
+}
+button.addToBasket>span.addToBasketadded{
+	display: none;
+}
+button.addToBasket.added>span.addToBasketadded{
+	display: block;
+}
+button.addToBasket.added>span.addToBasket_default{
+	display: none;
+}
+
+@keyframes blink {
+	0% {
+		transform: translateX(200%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+@keyframes shine {
+	0% {
+		background-color: var(--red-color);
+	}
+	1% {
+		background-color: var(--green-color);
+	}
+	50% {
+		background-color: var(--green-color);
+	}
+	100% {
+		background-color: var(--red-color);
+	}
 }
 
 

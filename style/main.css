@@ -325,9 +325,21 @@ h1 span.secondary_title {
 button.addToBasket {
 	width: 145px;
 	height: 40px;
+}
+button.addToBasket>span{
 	font-size: 17px;
 	color: #fff;
 }
+button.addToBasket>span.addToBasketadded{
+	display: none;
+}
+button.addToBasket.added>span.addToBasketadded{
+	display: block;
+}
+button.addToBasket.added>span.addToBasket_default{
+	display: none;
+}
+
 button.showMore {
 	width: 150px;
 	height: 35px;
@@ -792,6 +804,10 @@ h2.blackbox_title {
 	width: 87px;
 	background-position: 0 0;
 }
+.car_model-block.mercedes .img_wrap {
+	width: 67px;
+	background-position: -1487px 0;
+}
 .car_model-block.bmw .img_wrap{
 	width: 67px;
 	background-position: -87px 0;
@@ -971,6 +987,10 @@ h2.blackbox_title {
 	.car_model-block.audi .img_wrap {
 		width: 67px;
 	}
+	.car_model-block.mercedes .img_wrap {
+		width: 52px;
+		background-position: -1144px 0;
+	}
 	.car_model-block.bmw .img_wrap{
 		width: 51px;
 		background-position: -66px 0;
@@ -1103,6 +1123,10 @@ h2.blackbox_title {
 	.car_model-block.bmw .img_wrap{
 		width: 40px;
 		background-position: -53px 0;
+	}
+	.car_model-block.mercedes .img_wrap {
+		width: 42px;
+		background-position: -915px 0;
 	}
 	.car_model-block.citroen .img_wrap{
 		width:41px;

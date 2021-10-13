@@ -470,6 +470,11 @@ $(document).ready(function(){
 
 	$('.js-example-basic-single').select2({width: 'resolve'});
 
+
+	$('button.addToBasket').click(function () {
+		$(this).addClass('added');
+	});
+
 });
 
 var input = document.querySelector("#phone");
