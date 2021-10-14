@@ -3,7 +3,7 @@
 	--grey-color: #eceff1;
 	--lightgrey-color: #f1f4f6;
 	--red-color: #c21d07;
-	--green-color: #498b13;
+	--darkred-color: #8c1404;
 }
 * {
 	margin: 0;
@@ -150,10 +150,10 @@ button.addToBasket.added>span.addToBasket_default{
 		background-color: var(--red-color);
 	}
 	1% {
-		background-color: var(--green-color);
+		background-color: var(--darkred-color);
 	}
 	50% {
-		background-color: var(--green-color);
+		background-color: var(--darkred-color);
 	}
 	100% {
 		background-color: var(--red-color);
@@ -988,6 +988,7 @@ footer .madeBy_wrap a {
 	text-decoration: none;
 	font-weight: 600;
 	transition: all 0.2s linear;
+	letter-spacing: 0.5px;
 }
 
 .mobile_header {
