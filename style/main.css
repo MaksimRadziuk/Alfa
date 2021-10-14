@@ -746,34 +746,29 @@ h2.blackbox_title {
 	color: var(--red-color);
 }
 
-.filter_step2-wrap .beradcrumbs {
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-start;
+.filter_step2-wrap .breadcrumbs {
+	margin-top: 0;
 	margin-bottom: 30px;
 }
-.filter_step2-wrap .beradcrumbs a{
+.filter_step2-wrap .breadcrumbs a{
 	font-size: 13px;
 	color: #a8aeb2;
 }
-.filter_step2-wrap .beradcrumbs a:hover {
+.filter_step2-wrap .breadcrumbs a:hover {
 	color: var(--red-color);
 }
-.filter_step2-wrap .beradcrumbs .arrow {
+.filter_step2-wrap .breadcrumbs .arrow {
 	margin: 0 15px;
-	pointer-events: none;
 }
-.filter_step2-wrap .beradcrumbs a:last-child {
-	pointer-events: none;
-}
+
 #tabSecondStep2 ul{
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-column-gap: 20px;
-	grid-row-gap: 20px;
+	columns: 5;
+    -webkit-columns: 5;
+    -moz-columns: 5;
 }
 #tabSecondStep2 ul>li {
 	font-size: 17px;
+	padding: 10px 20px 10px 0;
 }
 #tabSecondStep2 ul li:hover {
 	color: var(--red-color);
@@ -783,6 +778,9 @@ h2.blackbox_title {
 #tabSecondStep3 {
 	padding: 5px 25px;
 	text-align: center;
+}
+#tabSecondStep3.leftFloat {
+	text-align: left;
 }
 .car_model-block {
 	display: inline-flex;
@@ -883,11 +881,16 @@ h2.blackbox_title {
 }
 
 
+#tabSecondStep4 {
+	column: 6;
+    -webkit-columns: 6;
+    -moz-columns: 6;
+}
 .model_row-block {
 	display: inline-block;
 	font-size: 17px;
 	cursor: pointer;
-	margin-right: 80px;
+	margin-right: 20px;
 	margin-top: 20px;
 }
 .model_row-block:hover {
@@ -984,6 +987,11 @@ h2.blackbox_title {
 	}
 }
 @media all and (max-width: 1380px) {
+	#tabSecondStep4 {
+		column: 5;
+	    -webkit-columns: 5;
+	    -moz-columns: 5;
+	}
 	.car_model-block.audi .img_wrap {
 		width: 67px;
 	}
@@ -1080,12 +1088,13 @@ h2.blackbox_title {
 		font-size: 17px
 	}
 	#tabSecondStep2 ul {
-	    grid-template-columns: repeat(4, 1fr);
-	    grid-column-gap: 15px;
-    	grid-row-gap: 15px;
+	    columns: 4;
+	    -webkit-columns: 4;
+	    -moz-columns: 4;
 	}
 	#tabSecondStep2 ul>li {
 		font-size: 15px;
+		padding: 8px 15px 8px 0;
 	}
 	.car_model-block .img_wrap {
 		height: 50px;
@@ -1220,6 +1229,11 @@ h2.blackbox_title {
 	}
 }
 @media all and (max-width: 900px) {
+	#tabSecondStep4 {
+		column: 4;
+	    -webkit-columns: 4;
+	    -moz-columns: 4;
+	}
 	h1 {
 		width: 90%;
 	}
@@ -1239,7 +1253,8 @@ h2.blackbox_title {
 		padding: 20px
 	}
 	#tabSecondStep2 ul {
-	    grid-template-columns: repeat(3, 1fr);
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
 	    max-height: 80vh;
 	    overflow-y: auto;
 	}
@@ -1406,6 +1421,11 @@ h2.blackbox_title {
 	.first_screen .container {
 	    background-position: 20vw 0;
 	}
+	#tabSecondStep4 {
+		column: 3;
+	    -webkit-columns: 3;
+	    -moz-columns: 3;
+	}
 }
 @media all and (max-width: 700px) {
 	.filter_result-view {
@@ -1496,6 +1516,11 @@ h2.blackbox_title {
 	.filter__tab-trigger br {
 		display: block;
 	} 
+	#tabSecondStep4 {
+		column: 2;
+	    -webkit-columns: 2;
+	    -moz-columns: 2;
+	}
 }
 @media all and (max-width: 580px) {
 	.filter_result-wrap {
@@ -1528,6 +1553,9 @@ h2.blackbox_title {
 	} 
 	.autoparsing .slider_wrap {
 		min-width: 560px;
+	}
+	.model_row-block {
+		font-size: 15px
 	}
 }
 @media all and (max-width: 500px) {

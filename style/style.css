@@ -90,6 +90,7 @@ a {
 .breadcrumbs a.arrow {
 	display: block;
 	margin: 0 20px;
+	pointer-events: none;
 }
 
 #background {

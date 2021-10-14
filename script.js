@@ -192,6 +192,11 @@ $(document).ready(function(){
 	$('#tabSecondStep2 ul li').click(function(){
 		$('#tabSecondStep2').removeClass('active');
 		$('#tabSecondStep3').addClass('active');
+		let modelLength = $("#tabSecondStep3>.car_model-block").length;
+		if (modelLength < 3) {
+			$('#tabSecondStep3').addClass('leftFloat');
+		}
+		else {}
 	})
 	$('#tabSecondStep3 .car_model-block').click(function(){
 		$('#tabSecondStep3').removeClass('active');
