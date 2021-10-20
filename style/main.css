@@ -882,9 +882,9 @@ h2.blackbox_title {
 
 
 #tabSecondStep4 {
-	column: 6;
-    -webkit-columns: 6;
-    -moz-columns: 6;
+	column: 10;
+    -webkit-columns: 10;
+    -moz-columns: 10;
 }
 .model_row-block {
 	display: inline-block;
@@ -988,9 +988,9 @@ h2.blackbox_title {
 }
 @media all and (max-width: 1380px) {
 	#tabSecondStep4 {
-		column: 5;
-	    -webkit-columns: 5;
-	    -moz-columns: 5;
+		column: 8;
+	    -webkit-columns: 8;
+	    -moz-columns: 8;
 	}
 	.car_model-block.audi .img_wrap {
 		width: 67px;
@@ -1230,9 +1230,12 @@ h2.blackbox_title {
 }
 @media all and (max-width: 900px) {
 	#tabSecondStep4 {
-		column: 4;
-	    -webkit-columns: 4;
-	    -moz-columns: 4;
+		column: 6;
+	    -webkit-columns: 6;
+	    -moz-columns: 6;
+	}
+	.model_row-block {
+		font-size: 15px
 	}
 	h1 {
 		width: 90%;
@@ -1421,11 +1424,6 @@ h2.blackbox_title {
 	.first_screen .container {
 	    background-position: 20vw 0;
 	}
-	#tabSecondStep4 {
-		column: 3;
-	    -webkit-columns: 3;
-	    -moz-columns: 3;
-	}
 }
 @media all and (max-width: 700px) {
 	.filter_result-view {
@@ -1517,9 +1515,9 @@ h2.blackbox_title {
 		display: block;
 	} 
 	#tabSecondStep4 {
-		column: 2;
-	    -webkit-columns: 2;
-	    -moz-columns: 2;
+		column: 4;
+	    -webkit-columns: 4;
+	    -moz-columns: 4;
 	}
 }
 @media all and (max-width: 580px) {
