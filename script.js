@@ -158,6 +158,8 @@ $(document).ready(function(){
 		else{
 			$('.filter__tab').removeClass('active');
 			$('#filterFirst').addClass('active');
+			$('.filter_results').show();
+			$('.result_block-slider').slick();
 		}
 	})
 	$('#filterSecondTrigger').click(function(){
@@ -170,6 +172,8 @@ $(document).ready(function(){
 		else{
 			$('.filter__tab').removeClass('active');
 			$('#filterSecond').addClass('active');
+			$('.filter_results').show();
+			$('.result_block-slider').slick();
 		}
 	})
 	$('#filterThirdTrigger').click(function(){
@@ -182,6 +186,7 @@ $(document).ready(function(){
 		else{
 			$('.filter__tab').removeClass('active');
 			$('#filterThird').addClass('active');
+			$('.filter_results').hide();
 		}
 	})
 

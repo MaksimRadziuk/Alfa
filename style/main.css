@@ -95,12 +95,12 @@ h1 span.secondary_title {
 }
 .filter_wrap {
 	background-color:var(--grey-color);
+	padding-bottom: 60px;
 }
 .filter__tab {
 	width: 100%;
 	padding-top: 40px;
 	display: none;
-	padding-bottom: 60px;
 }
 .filter__tab.active {
 	display: block;
@@ -648,6 +648,9 @@ h2.blackbox_title {
 	margin-left: 30px;
 	margin-right: 0;
 }
+.filter_results {
+	width: 100%;
+}
 
 .filter_step2-wrap {
 	display: none;
@@ -785,7 +788,7 @@ h2.blackbox_title {
 .car_model-block {
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-direction: column;
 	margin: 25px 30px;
 	cursor: pointer;
@@ -854,7 +857,7 @@ h2.blackbox_title {
 	width: 75px;
 	background-position: -997px 0;
 }
-.car_model-block.pegeot .img_wrap{
+.car_model-block.peugeot .img_wrap{
 	width: 65px;
 	background-position: -1082px 0;
 }
@@ -873,6 +876,27 @@ h2.blackbox_title {
 .car_model-block.volkswagen .img_wrap{
 	width: 67px;
 	background-position: -1421px 0;
+}
+
+.car_model-block.infiniti .img_wrap{
+	width: 123px;
+	background-position: -1665px 0;
+}
+.car_model-block.ssangyong .img_wrap{
+	width: 105px;
+	background-position: -1797px 0;
+}
+.car_model-block.seat .img_wrap{
+	width: 73px;
+	background-position: -1905px 0;
+}
+.car_model-block.skoda .img_wrap{
+	width: 65px;
+	background-position: -1988px 0;
+}
+.car_model-block.hino .img_wrap{
+	width: 98px;
+	background-position: -1558px 0;
 }
 
 .car_model-block p {
@@ -1047,7 +1071,7 @@ h2.blackbox_title {
 		width: 56px;
 		background-position: -768px 0;
 	}
-	.car_model-block.pegeot .img_wrap{
+	.car_model-block.peugeot .img_wrap{
 		width: 52px;
 		background-position: -830px 0;
 	}
@@ -1066,6 +1090,26 @@ h2.blackbox_title {
 	.car_model-block.volkswagen .img_wrap{
 		width: 50px;
 		background-position: -1092px 0;
+	}
+	.car_model-block.infiniti .img_wrap{
+		width: 93px;
+		background-position: -1281px 0;
+	}
+	.car_model-block.ssangyong .img_wrap{
+		width: 82px;
+		background-position: -1381px 0;
+	}
+	.car_model-block.seat .img_wrap{
+		width: 58px;
+		background-position: -1464px 0;
+	}
+	.car_model-block.skoda .img_wrap{
+		width: 59px;
+		background-position: -1529px 0;
+	}
+	.car_model-block.hino .img_wrap{
+		width: 73px;
+		background-position: -1200px 0;
 	}
 	h1 {
 		padding: 0 10px;
@@ -1181,7 +1225,7 @@ h2.blackbox_title {
 		width: 43px;
 		background-position: -616px 0;
 	}
-	.car_model-block.pegeot .img_wrap{
+	.car_model-block.peugeot .img_wrap{
 		width: 41px;
 		background-position: -665px 0;
 	}
@@ -1200,6 +1244,26 @@ h2.blackbox_title {
 	.car_model-block.volkswagen .img_wrap{
 		width:41px;
 		background-position: -873px 0;
+	}
+	.car_model-block.infiniti .img_wrap{
+		width: 75px;
+		background-position: -1024px 0;
+	}
+	.car_model-block.ssangyong .img_wrap{
+		width: 64px;
+		background-position: -1106px 0;
+	}
+	.car_model-block.seat .img_wrap{
+		width: 47px;
+		background-position: -1172px 0;
+	}
+	.car_model-block.skoda .img_wrap{
+		width: 40px;
+		background-position: -1223px 0;
+	}
+	.car_model-block.hino .img_wrap{
+		width: 59px;
+		background-position: -960px 0;
 	}
 	.filter_result-wrap {
 		grid-template-columns: repeat(3, 1fr);
@@ -1525,7 +1589,7 @@ h2.blackbox_title {
 		grid-template-columns:1fr;
 		margin-bottom: 40px
 	}
-	.filter__tab {
+	.filter_wrap {
 		padding-bottom: 40px
 	}
 	.filter_pagination-wrap {
