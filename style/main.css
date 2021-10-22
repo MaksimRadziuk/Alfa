@@ -95,7 +95,6 @@ h1 span.secondary_title {
 }
 .filter_wrap {
 	background-color:var(--grey-color);
-	padding-bottom: 60px;
 }
 .filter__tab {
 	width: 100%;
@@ -650,6 +649,8 @@ h2.blackbox_title {
 }
 .filter_results {
 	width: 100%;
+	background-color: var(--grey-color);
+	padding-bottom: 60px;
 }
 
 .filter_step2-wrap {
@@ -805,7 +806,7 @@ h2.blackbox_title {
 	width: 87px;
 	background-position: 0 0;
 }
-.car_model-block.mercedes .img_wrap {
+.car_model-block.mercedes-benz .img_wrap {
 	width: 67px;
 	background-position: -1487px 0;
 }
@@ -1019,7 +1020,7 @@ h2.blackbox_title {
 	.car_model-block.audi .img_wrap {
 		width: 67px;
 	}
-	.car_model-block.mercedes .img_wrap {
+	.car_model-block.mercedes-benz .img_wrap {
 		width: 52px;
 		background-position: -1144px 0;
 	}
@@ -1177,7 +1178,7 @@ h2.blackbox_title {
 		width: 40px;
 		background-position: -53px 0;
 	}
-	.car_model-block.mercedes .img_wrap {
+	.car_model-block.mercedes-benz .img_wrap {
 		width: 42px;
 		background-position: -915px 0;
 	}
@@ -1490,11 +1491,12 @@ h2.blackbox_title {
 	}
 }
 @media all and (max-width: 700px) {
+	.filter_results {
+		padding-top: 40px;
+		padding-bottom: 40px
+	}
 	.filter_result-view {
 		display: none;
-	}
-	.filter_result-wrap {
-		margin-top: 40px
 	}
 	#tabSecondStep2 ul {
 	    grid-template-columns: repeat(2, 1fr);
@@ -1587,10 +1589,6 @@ h2.blackbox_title {
 @media all and (max-width: 580px) {
 	.filter_result-wrap {
 		grid-template-columns:1fr;
-		margin-bottom: 40px
-	}
-	.filter_wrap {
-		padding-bottom: 40px
 	}
 	.filter_pagination-wrap {
 		display: none;
