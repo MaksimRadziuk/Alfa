@@ -108,13 +108,43 @@ h1 span.secondary_title {
 	display:grid;
 	grid-template-columns: auto 25% 18% 18% 18%;
 	grid-column-gap: 30px;
-	align-items: center;
+	align-items: top;
 }
 .filter__tab-first form .select_wrap {
 	margin-bottom: 0;
 }
 .filter_tab-title {
 	font-size: 17px;
+	padding-top: 10px;
+}
+.options_wrap {
+	width: 200%;
+	padding-top: 25px;
+}
+.options_wrap li{
+	display: inline-flex;
+	padding-left: 20px;
+}
+.options_wrap li:first-child {
+	padding-left: 35px;
+}
+.options_wrap li p {
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 15px;
+	display: inline;
+}
+.options_wrap li p:hover {
+	color: var(--red-color);
+}
+.options_wrap li p.toggled {
+	color: #fff;
+	background-color: var(--red-color);
+	text-decoration: none;
+}
+.options_wrap li span {
+	display: inline-block;
+	margin: 0 5px;
 }
 
 .filter_result-view {
@@ -1294,6 +1324,16 @@ h2.blackbox_title {
 	}
 }
 @media all and (max-width: 900px) {
+	.options_wrap {
+		width: 100%;
+		padding-top: 0px
+	}
+	.options_wrap li {
+		padding-top: 20px
+	}
+	.options_wrap li:first-child {
+		padding-left: 20px;
+	}
 	#tabSecondStep4 {
 		column: 6;
 	    -webkit-columns: 6;

@@ -485,6 +485,11 @@ $(document).ready(function(){
 		$(this).addClass('added');
 	});
 
+
+	$('.options_wrap li p').click(function(){
+		$(this).toggleClass('toggled');
+	})
+
 });
 
 var input = document.querySelector("#phone");
