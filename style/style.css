@@ -5,14 +5,23 @@
 	--red-color: #c21d07;
 	--darkred-color: #8c1404;
 }
-* {
+html {
+	position: relative;
 	margin: 0;
 	padding: 0;
+}
+div {
 	box-sizing: border-box;
 	font-family: SF UI Display, open sans;
 	font-weight: 400;
 	color: var(--main-color);
-	position: relative;
+}
+p, a {
+	font-family: SF UI Display, open sans;
+	font-weight: 400;
+	color: var(--main-color);
+	margin: 0;
+	padding: 0;
 }
 ul, ol {
 	list-style: none;
@@ -20,6 +29,8 @@ ul, ol {
 	padding: 0;
 }
 body {
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	max-width: 100vw;
 	overflow-x: hidden;
@@ -41,6 +52,10 @@ textarea {
 	border: none;
 	background: rgba(255,255,255,1);
 	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%);
+	box-sizing: border-box;
+	font-family: SF UI Display, open sans;
+	font-weight: 400;
+	color: var(--main-color);
 }
 input:focus,
 select:focus,
@@ -63,6 +78,8 @@ input[type=number] {
 	max-width: 100vw;
 	overflow-x: hidden;
 	background-color: #fff;
+	margin: 0;
+	padding: 0;
 }
 a {
 	text-decoration: none;
@@ -206,6 +223,7 @@ button.addToBasket.added>span.addToBasket_default{
 .checkbox_wrap {
 	width: 100%;
 	padding-left: 45px;
+	position: relative;
 }
 .checkbox_wrap input[type="checkbox"] {
 	display: none;
@@ -215,6 +233,7 @@ button.addToBasket.added>span.addToBasket_default{
 	color: #a8aeb2;
 	cursor: pointer;
 	padding-top: 5px;
+	position: relative;
 }
 .checkbox_wrap label:before {
 	content: '';
@@ -308,6 +327,7 @@ button.addToBasket.added>span.addToBasket_default{
 	border-radius: 3px;
 	padding-left: 30px;
 	font-size: 17px;
+	box-sizing: border-box;
 }
 
 .select_wrap {
@@ -317,6 +337,7 @@ button.addToBasket.added>span.addToBasket_default{
 	border: 1px solid #e2e5e8;
 	border-radius: 3px;
 	font-size: 19px;
+	position: relative;
 }
 .select_wrap select,
 .select_wrap input {
@@ -325,6 +346,7 @@ button.addToBasket.added>span.addToBasket_default{
 	padding-left: 30px;
 	font-size: 17px;
 	background-color: #fff;
+	box-sizing: border-box;
 }
 .select_wrap input {
 	border: none;
@@ -579,7 +601,7 @@ a.circle {
 a.circle>i {
 	font-size: 13px;
 	color: var(--red-color);
-	margin-top: 5px;
+	margin-top: 6px;
 }
 
 
@@ -614,6 +636,7 @@ a.circle>i {
 	justify-content: flex-start;
 }
 .counter_tile-block {
+	position: relative;
 	height: 45px;
 	width: 28px;
 	background-color: var(--main-color);
@@ -751,6 +774,7 @@ a.circle>i {
 	justify-content: center;
 	font-size: 17px;
 	cursor: pointer;
+	position: relative;
 }
 .navigation>li>img {
 	display: block;
@@ -815,7 +839,7 @@ footer .top_part {
 footer .top_part .container {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr)[4];
+	-ms-grid-columns: repeat(4, 1fr);
 	grid-template-columns: repeat(4, 1fr);
 	grid-column-gap: 30px;
 }
@@ -1265,6 +1289,7 @@ footer .madeBy_wrap a {
 		width: 100%;
 		height: 50px;
 		padding: 0 10px;
+		position: relative;
 	}
 
 	header .topbar, header .navbar {
@@ -1274,6 +1299,7 @@ footer .madeBy_wrap a {
 		width: 20px;
 		height: 16px;
 		cursor: pointer;
+		position: relative;
 	}
 	.hamburger span {
 		width: 100%;

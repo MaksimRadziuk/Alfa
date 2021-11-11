@@ -34,6 +34,7 @@ ul.advantages_list>li {
 	display: inline-block;
 	padding-left: 60px;
 	font-size: 19px;
+	position: relative;
 }
 ul.advantages_list>li:before {
 	content: '';

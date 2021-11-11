@@ -23,6 +23,7 @@ header {
 	padding: 0 60px;
 	height: 100%;
 	cursor: pointer;
+	position: relative;
 }
 .filter__tab-trigger:hover {
 	color: var(--main-color);
@@ -147,6 +148,10 @@ header {
 	padding: 0;
 	margin-bottom: 170px;
 	border-radius: 3px;
+	position: relative;
+}
+.rg-thumbs {
+	position: relative;
 }
 
 .product_info-wrap {
@@ -225,6 +230,7 @@ button.addtoBusket {
 	color: var(--red-color);
 	padding-left: 40px;
 	line-height: 1.6;
+	position: relative;
 }
 .product_warning:before {
 	content: '';

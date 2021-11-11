@@ -99,6 +99,7 @@ h1 {
 }
 .password_wrap input {
 	width: calc(50% - 15px);
+	box-sizing: border-box;
 }
 .lobby_content-wrap form button {
 	width: 185px;

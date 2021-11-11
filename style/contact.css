@@ -29,6 +29,7 @@ h1 {
 	width: 100%;
 	display: block;
 	line-height: 1.4;
+	position: relative;
 }
 .contact_info-wrap p:last-child,
 .contact_info-wrap a:last-child {

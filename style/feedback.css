@@ -83,6 +83,7 @@ button.showMore {
 	padding: 0 60px;
 	height: 100%;
 	cursor: pointer;
+	position: relative;
 }
 .tab_header-block>img {
 	margin-left: 10px;

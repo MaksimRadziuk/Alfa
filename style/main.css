@@ -43,6 +43,7 @@ h1 span.secondary_title {
 	width: 100%;
 }
 .filter__wrap-header {
+	position: relative;
 	width: 100%;
 	background-color: #fff;
 	height: 75px;
@@ -61,6 +62,7 @@ h1 span.secondary_title {
 	padding: 0 60px;
 	height: 100%;
 	cursor: pointer;
+	position: relative;
 }
 .filter__tab-trigger>.img_wrap {
 	display: none;
@@ -108,7 +110,6 @@ h1 span.secondary_title {
 	display:grid;
 	grid-template-columns: auto 25% 18% 18% 18%;
 	grid-column-gap: 30px;
-	align-items: top;
 }
 .filter__tab-first form .select_wrap {
 	margin-bottom: 0;
@@ -124,6 +125,7 @@ h1 span.secondary_title {
 .options_wrap li{
 	display: inline-flex;
 	padding-left: 20px;
+	align-items: center;
 }
 .options_wrap li:first-child {
 	padding-left: 35px;
@@ -352,8 +354,8 @@ h1 span.secondary_title {
 
 
 button.addToBasket {
-	width: 145px;
-	height: 40px;
+	box-sizing: border-box;
+	position: relative;
 }
 button.addToBasket>span{
 	font-size: 17px;
@@ -627,6 +629,7 @@ h2.blackbox_title {
 	width: auto;
 	margin-bottom: 0;
 	margin-right: 40px;
+	line-height: 1;
 }
 .youtube .header_wrap a {
 	font-size: 19px;
@@ -937,7 +940,7 @@ h2.blackbox_title {
 
 
 #tabSecondStep4 {
-	column: 10;
+	columns: 10;
     -webkit-columns: 10;
     -moz-columns: 10;
 }
@@ -1043,7 +1046,7 @@ h2.blackbox_title {
 }
 @media all and (max-width: 1380px) {
 	#tabSecondStep4 {
-		column: 8;
+		columns: 8;
 	    -webkit-columns: 8;
 	    -moz-columns: 8;
 	}
@@ -1335,7 +1338,7 @@ h2.blackbox_title {
 		padding-left: 20px;
 	}
 	#tabSecondStep4 {
-		column: 6;
+		columns: 6;
 	    -webkit-columns: 6;
 	    -moz-columns: 6;
 	}
@@ -1621,7 +1624,7 @@ h2.blackbox_title {
 		display: block;
 	} 
 	#tabSecondStep4 {
-		column: 4;
+		columns: 4;
 	    -webkit-columns: 4;
 	    -moz-columns: 4;
 	}
