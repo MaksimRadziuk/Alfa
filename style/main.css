@@ -1013,7 +1013,7 @@ h2.blackbox_title {
 .filter_table-wrap .table_row p:nth-child(4) {
 	min-width: 110px;
 }
-#filterThird {
+.filter__tab-third {
 	padding-bottom: 35px;
 }
 
