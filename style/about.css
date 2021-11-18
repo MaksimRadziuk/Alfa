@@ -35,6 +35,7 @@ ul.advantages_list>li {
 	padding-left: 60px;
 	font-size: 19px;
 	position: relative;
+	box-sizing: border-box;
 }
 ul.advantages_list>li:before {
 	content: '';
